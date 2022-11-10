@@ -1,11 +1,11 @@
 input: .
 output: .retype
-url: mailkeets.com
+url: docs.mailkeets.com
 branding:
   title: Mailkeets
   label: Docs
 links:
 - text: Getting Started
-  link: https://mailkeets.com/guides/getting-started/
+  link: https://docs.mailkeets.com/guides/getting-started/
 footer:
   copyright: "&copy; Kursaha Technologies {{ 2022 }}. All rights reserved."
