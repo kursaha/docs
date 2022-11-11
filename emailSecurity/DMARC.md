@@ -1,18 +1,16 @@
 ---
-order: 100
+order: 101
 icon: note
 ---
 
 # What is DMARC ?
 -------------
-DMARC (Domain-based Message Authentication, Reporting and Conformance) is a tool that aids in stopping spammers 
-from using your domain to send email without your permission. Before you even receive these fake emails in your inbox, 
-DMARC makes sure they are blocked. Additionally, DMARC ensures that only genuine email is received by giving you
-excellent visibility and reports into who is sending email on your domain's behalf.
-DMARC is built on top of two email security framework - DKIM and SPF. It can also store the status report of 
-every email that has been sent. So that, developer can secure the mail from spammers.
+* DMARC (Domain-based Message Authentication, Reporting and Conformance) is a tool that aids in stopping spammers from using your domain to send email without your permission. Before you even receive these fake emails in your inbox. DMARC makes sure they are blocked.
+* DMARC ensures that only genuine email is received by giving you excellent visibility and reports into who is sending email on your domain's behalf. 
+* DMARC is built on top of two email security framework - DKIM and SPF. It can also store the status report of every email that has been sent. So that, developer can secure the mail from spammers.
 
-#### If you look any DMARC txt record, there are some tags -
+#### If you look any DMARC txt record, there are some tags
+
 Tag | Description { class="compact" }
 --- | ---
 v | This is the version tag. The only version of DMARC is "DMARC1".

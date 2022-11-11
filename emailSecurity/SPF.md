@@ -1,6 +1,6 @@
 ---
-order: 100
-icon: gear
+order: 99
+icon: note
 ---
 
 # What is SPF ?
