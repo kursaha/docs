@@ -1,16 +1,11 @@
 input: .
 output: .retype
 url: docs.mailkeets.com
-
-favicon: static/favicon-32x32.png
-
 branding:
   title: Mailkeets
   label: Docs
-
 links:
 - text: Getting Started
   link: https://docs.mailkeets.com/guides/getting-started/
-
 footer:
   copyright: "&copy; Kursaha Technologies {{ 2022 }}. All rights reserved."
