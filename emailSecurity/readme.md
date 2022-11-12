@@ -31,7 +31,7 @@ This makes the impersonation of a person the victim either knows or respects rel
 
 ## Email security best practices
 
-Some of the important email security practices for the end users are
+Some of the important email security practices for the end users
 
 - [x] Use a strong email password 
 - [x] Use two-factor authentication
@@ -47,6 +47,14 @@ Some of the important email security practices for the end users are
 
 ## Security practices for mail servers
 
-- [DKIM](DKIM.md)
-- [DMARC](DMARC.md)
-- [SPF](SPF.md)
+Some of the important email security practices for the businesses
+
+1. Configure mail relay options to avoid Open Relay
+2. Implement [SPF](SPF.md) (Sender Policy Framework)
+3. Implement [DKIM](DKIM.md) (DomainKeys Identified Mail)
+4. Implement [DMARC](DMARC.md) (Domain-based Message Authentication Reporting & Conformance)
+5. Use Reverse DNS to block malicious senders
+6. Use DNSBL to block malicious emails and domains
+7. Use SURBL to block malicious URIs
+8. Use a local IP blacklist to block phishers and spammers
+9. Use TLS to keep your email confidential

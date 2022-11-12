@@ -1,26 +1,38 @@
 ---
 order: 99
 icon: note
+tags: [email, security]
 ---
 
 # What is SPF ?
 -------------
-SPF stands for Sender Policy Framework. With the help of SPF, email servers can authenticate the ip address of the 
-sender-email-server with the domain name the email. It is basically a DNS TXT Record with some necessary parameters
-that we have to include in the DNS server with the domain name.
-If we look into an SPF Record it looks like 
 
-###### **"v=spf1 a mx include:_spf.google.com -all"**
+!!!
+SPF stands for Sender Policy Framework
+!!!
 
-Tag | Description
---- | ---
-v | That defines the version of SPF Record. It is always version "SPF1".
-a | It indicates that, if ip address of sender mail will match with 'A' type Dns record of the sending domain. Then the SPF will pass.
-mx | It works same as 'a'. It will check the 'MX' type Dns record of the sending domain is same as mail ip address or not. If it is same then SPF will pass.
+=== Definition
+Specifies the servers and domains that are authorized to send email on behalf of your organization.
+===
+
+
+With the help of SPF, email servers can authenticate the ip address of the sender-email-server with the domain name the email. It is basically a DNS TXT Record with some necessary parameters that we have to include in the DNS server with the domain name.
+
+=== SAMPLE DMARC DNS record (type = TXT)
+`"v=spf1 a mx include:_spf.google.com -all"`
+===
+
+## SPF Tag definition
+
+Tag     | Description
+---     | ---
+  v     | That defines the version of SPF Record. It is always version "SPF1".
+  a     | It indicates that, if ip address of sender mail will match with 'A' type Dns record of the sending domain. Then the SPF will pass.
+ mx     | It works same as 'a'. It will check the 'MX' type Dns record of the sending domain is same as mail ip address or not. If it is same then SPF will pass.
 include | It matches the ip address of email with the domain.
-all | It always checks all the parameters.
+all     | It always checks all the parameters.
 
-### SPF Qualifiers -
+## SPF Qualifiers
 
 Qualifier | Description { class="compact" }
 ----- | -----
