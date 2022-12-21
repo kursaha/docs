@@ -3,7 +3,7 @@ layout: page
 ---
 # About
 
-Do you have a general inquiry? Please feel free to contact us at [nishant@mailkeets.com](mailto:nishant@mailkeets.com).
+Do you have a general inquiry? Please feel free to contact us at [hello@kursaha.com](mailto:hello@kursaha.com).
 
 ## Credits :clap:
 
