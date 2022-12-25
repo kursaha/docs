@@ -18,7 +18,7 @@ Specifies the servers and domains that are authorized to send email on behalf of
 
 With the help of SPF, email servers can authenticate the ip address of the sender-email-server with the domain name the email. It is basically a DNS TXT Record with some necessary parameters that we have to include in the DNS server with the domain name.
 
-=== SAMPLE DMARC DNS record (type = TXT)
+=== SAMPLE SPF DNS record (type = TXT)
 `"v=spf1 a mx include:_spf.google.com -all"`
 ===
 
