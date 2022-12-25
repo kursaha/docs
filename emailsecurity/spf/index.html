@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.724959258193">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.725299043099">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -34,11 +34,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/favicon.png" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.724959258193" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.725299043099" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.724959258193" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.725299043099" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.724959258193" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.725299043099" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -285,8 +285,8 @@
 <p>Specifies the servers and domains that are authorized to send email on behalf of your organization.</p>
 </doc-panel>
 <p>With the help of SPF, email servers can authenticate the ip address of the sender-email-server with the domain name the email. It is basically a DNS TXT Record with some necessary parameters that we have to include in the DNS server with the domain name.</p>
-<doc-panel id="sample-dmarc-dns-record-type-txt">
-    <template #title>SAMPLE DMARC DNS record (type = TXT)</template>
+<doc-panel id="sample-spf-dns-record-type-txt">
+    <template #title>SAMPLE SPF DNS record (type = TXT)</template>
 <p><code v-pre>&quot;v=spf1 a mx include:_spf.google.com -all&quot;</code></p>
 </doc-panel>
 <doc-anchor-target id="spf-tag-definition">
