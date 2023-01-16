@@ -1,6 +1,6 @@
 ---
 order: 100
-icon: ../static/mail-secure.png
+icon: mail
 tags: [email, security]
 ---
 

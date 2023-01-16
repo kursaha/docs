@@ -1,6 +1,6 @@
 ---
 order: 100
-icon: ../static/mail-signed.png
+icon: lock
 tags: [email, security]
 ---
 

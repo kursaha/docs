@@ -5,14 +5,14 @@ url: docs.kursaha.com
 favicon: static/favicon.png
 
 branding:
-  title: Mailkeets
+  title: Kursaha
   label: v1.0
 
 meta:
   title: " - Customer engagement and business growth platform"
 
 edit:
-  repo: github.com/mailkeets/mailkeets.github.io
+  repo: github.com/kursaha/docs
 
 
 links:

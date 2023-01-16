@@ -2,19 +2,21 @@
 label: LICENSE
 layout: page
 ---
-# Mailkeets Software License Agreement
+# Kursaha Software License Agreement
 
 #### Version 1.0.0
 
 THIS DOCUMENT IS A LEGAL AGREEMENT (the "License Agreement") BETWEEN OBJECT.NET, INC. ("We," "Us")
 AND YOU OR THE ORGANIZATION ON WHOSE BEHALF YOU ARE UNDERTAKING THE LICENSE DESCRIBED BELOW ("You",
-"Your") IN RELATION TO THE (Mailkeets) KURSAHA SOFTWARE LIBRARY(IES) (THE "Software"), IN BOTH SOURCE 
+"Your") IN RELATION TO THE (Kursaha) KURSAHA SOFTWARE LIBRARY(IES) (THE "Software"), IN BOTH SOURCE 
 AND OBJECT CODE FORM, AND/OR ALL RELATED MATERIALS.
 
 BY DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING THE SOFTWARE, YOU ACCEPT THE FOLLOWING TERMS
 AND CONDITIONS. IF YOU DO NOT AGREE WITH ANY OF THE TERMS OR CONDITIONS OF THIS LICENSE AGREEMENT,
 DO NOT PROCEED WITH THE DOWNLOADING, COPYING, INSTALLATION OR ANY OTHER USE OF THE SOFTWARE OR ANY
-PORTION THEREOF AS YOU HAVE NO RIGHTS TO DO SO. THE SOFTWARE IS PROTECTED BY INDIA COPYRIGHT LAWS AND INTERNATIONAL COPYRIGHT LAWS, AS WELL AS OTHER INTELLECTUAL PROPERTY LAWS AND TREATIES. THE SOFTWARE IS LICENSED, NOT SOLD.
+PORTION THEREOF AS YOU HAVE NO RIGHTS TO DO SO. THE SOFTWARE IS PROTECTED BY INDIA COPYRIGHT LAWS 
+AND INTERNATIONAL COPYRIGHT LAWS, AS WELL AS OTHER INTELLECTUAL PROPERTY LAWS AND TREATIES. THE SOFTWARE
+ IS LICENSED, NOT SOLD.
 
 THIS LICENSE AGREEMENT DESCRIBES YOUR RIGHTS AND RESTRICTIONS WITH RESPECT TO THE SOFTWARE AND
 ITS COMPONENTS.
@@ -62,7 +64,7 @@ outside the Organization on whose behalf you have undertaken this license. We re
 terminate Your License at any time in Our absolute and sole discretion. Without the purchase and
 inclusion of a License Key, the Software may contain restricted functionality, which from
 time-to-time may differ in its limitations. If you wish to remove these restrictions, you are
-required to purchase a Mailkeets License Key; otherwise you must leave this limitation intact and not
+required to purchase a Kursaha License Key; otherwise you must leave this limitation intact and not
 attempt to modify or circumvent it in any way.
 
 In addition to the other terms contained herein, in the event You have downloaded or received beta
