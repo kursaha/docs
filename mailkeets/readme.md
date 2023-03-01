@@ -1,5 +1,5 @@
 ---
-order: 100
+order: 99
 icon: mail
 tags: [email, mailkeets]
 ---
