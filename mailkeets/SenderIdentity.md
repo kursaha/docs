@@ -1,6 +1,6 @@
 ---
 order: 99
-icon: mail
+icon: gear
 tags: [mailkeets, configuration]
 ---
 

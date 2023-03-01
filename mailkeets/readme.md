@@ -1,6 +1,6 @@
 ---
 order: 100
-icon: info
+icon: mail
 tags: [email, mailkeets]
 ---
 

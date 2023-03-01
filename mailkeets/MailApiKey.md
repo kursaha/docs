@@ -1,6 +1,6 @@
 ---
 order: 98
-icon: mail
+icon: key
 tags: [mailkeets, configuration]
 ---
 
