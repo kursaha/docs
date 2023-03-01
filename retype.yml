@@ -40,7 +40,7 @@ links:
     icon: static/instagram.svg
 
 footer:
-  copyright: "&copy; Kursaha Technologies {{ 2022 }}. All rights reserved."
+  copyright: "&copy; Kursaha Technologies {{ 2023 }}. All rights reserved."
   links:
     - text: About
       link: about.md
