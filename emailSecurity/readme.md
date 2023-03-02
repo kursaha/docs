@@ -1,6 +1,6 @@
 ---
 order: 100
-icon: mail
+icon: verified
 tags: [email, security]
 ---
 
