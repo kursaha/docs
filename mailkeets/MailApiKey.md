@@ -1,7 +1,7 @@
 ---
-order: 98
-icon: key
+order: 99
+icon: mail
 tags: [mailkeets, configuration]
 ---
 
-# Mail Api Key
+# Set Mail Api
