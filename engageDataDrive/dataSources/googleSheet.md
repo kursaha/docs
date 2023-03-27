@@ -28,6 +28,10 @@ Spreadsheet Link  | Enter the link to the Google spreadsheet you want to sync. [
 Name  | Description { class="compact" }
 :---  | ---
 Source Name  | Pick a name to help you identify this source.
-Service Account Key Authentication  | To authenticate your Google account via Service Account Key Authentication, enter your Google Cloud service account key in JSON format. [Make sure that the Service Account has access to your spreadsheet.](https://www.youtube.com/watch?v=GyomEw5a2NQ)
+Service Account Key Authentication  | To authenticate your Google account via Service Account Key Authentication, enter your Google Cloud service account key in JSON format. [Make sure that the Service Account has access to your spreadsheet.](https://docs.kursaha.com/engagedatadrive/datasources/googlesheet/#how-to-connect-google-sheet-and-google-service-account)
 Row Batch Size  | Number of rows fetched when making a Google Sheet API call. Defaults to 200.
 Spreadsheet Link  | Enter the link to the Google spreadsheet you want to sync. [Example value](https://developers.google.com/sheets/api/guides/concepts)
+
+
+### How To Connect Google Sheet And Google Service Account
+[!embed el="embed"](https://youtu.be/Ozzf0u2Chwc)
