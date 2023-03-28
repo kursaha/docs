@@ -35,3 +35,11 @@ Spreadsheet Link  | Enter the link to the Google spreadsheet you want to sync. [
 
 ### How To Connect Google Sheet And Google Service Account
 [!embed el="embed"](https://youtu.be/Ozzf0u2Chwc)
+- Goto Google Cloud API console.
+- Enable Google Sheet API.
+- Create a new Service Account and also create a new Key for that account.
+- Download the Json Credentials and copy the **"client_email"** field.
+- Next, Open the google sheet and click on share button.
+- Paste the client_email which you have copied earlier.
+- Grant permission to Viewer.
+- Share that sheet.
