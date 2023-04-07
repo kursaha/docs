@@ -1,6 +1,6 @@
 ---
 label: Marketing emails
-icon: guidlines
+icon: tasklist
 ---
 # Marketing email writing Guidlines
 
