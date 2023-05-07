@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734172161693">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736778711031">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Template - Customer engagement and business growth platform</title>
     <meta name="title" content="Template - Customer engagement and business growth platform">
-    <meta name="description" content="This document describes How to create a mail or message Template. There are some prerequisite for creating a template." />
+    <meta name="description" content="This document provides instructions on how to create a template for emails or messages." />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.kursaha.com/engagedatadrive/template/" />
@@ -23,22 +23,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.kursaha.com/engagedatadrive/template/">
     <meta property="og:title" content="Template - Customer engagement and business growth platform">
-    <meta property="og:description" content="This document describes How to create a mail or message Template. There are some prerequisite for creating a template.">
+    <meta property="og:description" content="This document provides instructions on how to create a template for emails or messages.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.kursaha.com/engagedatadrive/template/">
     <meta property="twitter:title" content="Template - Customer engagement and business growth platform">
-    <meta property="twitter:description" content="This document describes How to create a mail or message Template. There are some prerequisite for creating a template.">
+    <meta property="twitter:description" content="This document provides instructions on how to create a template for emails or messages.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/favicon.png" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.734172161693" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.736778711031" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734172161693" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.736778711031" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734172161693" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.736778711031" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -262,37 +262,111 @@
         <span>Template</span>
     </h1>
 </doc-anchor-target>
-<p>This document describes How to create a mail or message Template. There are some prerequisite for creating a template. Make sure that you have created a valid <strong>Datasource</strong> and <strong>Query</strong>.</p>
-<doc-anchor-target id="how-to-create-a-template">
+<doc-anchor-target id="how-to-create-a-mail-or-message-template">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-create-a-template">#</doc-anchor-trigger>
-        <span>How to create a Template</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-create-a-mail-or-message-template">#</doc-anchor-trigger>
+        <span>How to Create a Mail or Message Template</span>
     </h2>
 </doc-anchor-target>
-<ul>
-<li>Give a name of that Template.</li>
-<li>Choose the Template type. For example, If you want to send email via this template, you can choose <strong>mail</strong> template.</li>
-</ul>
+<p>This document provides instructions on how to create a template for emails or messages. Before creating a template, make sure that you have a valid datasource and query.</p>
+<doc-anchor-target id="creating-a-template">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#creating-a-template">#</doc-anchor-trigger>
+        <span>Creating a Template</span>
+    </h3>
+</doc-anchor-target>
+<p>To create a template, follow these steps:</p>
+<ol>
+<li>Give the template a name.</li>
+<li>Choose the type of template you want to create, such as mail or message.</li>
+</ol>
 <doc-anchor-target id="mail-template">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#mail-template">#</doc-anchor-trigger>
         <span>Mail Template</span>
     </h3>
 </doc-anchor-target>
-<p>In <strong>Mail Template</strong> you have to</p>
-<ul>
-<li>choose type of the Template, like <em>text</em> or <em>html</em>.</li>
-<li>write your template. Please give the proper placeholder value so that we can fill your template correctly for multiple user.</li>
-</ul>
-<doc-anchor-target id="give-proper-placeholder-in-template">
+<p>We use <a href="https://www.thymeleaf.org/index.html">Thymeleaf</a> for mail templating. When creating a mail template, you need to:</p>
+<ol>
+<li>Choose the type of template you want to create, such as text or HTML.</li>
+<li>Write your template, and include placeholders where you want dynamic content to appear.</li>
+</ol>
+<doc-anchor-target id="placeholder-format">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#give-proper-placeholder-in-template">#</doc-anchor-trigger>
-        <span>Give Proper Placeholder in Template</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#placeholder-format">#</doc-anchor-trigger>
+        <span>Placeholder Format</span>
     </h3>
 </doc-anchor-target>
-<p>When you are writing a template you should give proper placeholder. The format of the palceholder must be like this <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
-    <span>[(${value})]</span>
-</span> where <em>value</em> is the query mapping name which we have given to build Query.</p>
+<p>When writing a template, it is important to use proper placeholders. The format for placeholders should be as follows: <code v-pre>[(${value})]</code>. Here, <code v-pre>value</code> is the query mapping name that you have given to build the query.</p>
+<doc-anchor-target id="sample-with-default-value">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sample-with-default-value">#</doc-anchor-trigger>
+        <span>Sample with Default Value</span>
+    </h4>
+</doc-anchor-target>
+<p>Consider the following sample template:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Dear [(${name != null ? name : 'Valuable Customer'})],
+Please find attached the results of the report you requested.
+
+Sincerely,
+Kursaha Tech.</code></pre>
+</doc-codeblock></div>
+<p>In this template, we have used the <code v-pre>name</code> placeholder, and given it a default value of <code v-pre>Valuable Customer</code>. When you provide the JSON data <code v-pre>{'name': 'Josh'}</code>, the output will be:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Dear Josh,
+Please find attached the results of the report you requested.
+
+Sincerely,
+Kursaha Tech.</code></pre>
+</doc-codeblock></div>
+<p>By using proper placeholders, you can create dynamic templates that can be filled with data for multiple users.</p>
+<doc-anchor-target id="sample-with-array-value">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sample-with-array-value">#</doc-anchor-trigger>
+        <span>Sample with Array Value</span>
+    </h4>
+</doc-anchor-target>
+<p>Suppose we have an array of names in our JSON data, like this:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">{
+    &quot;names&quot;: [&quot;John&quot;, &quot;Jane&quot;, &quot;Joe&quot;]
+}</code></pre>
+</doc-codeblock></div>
+<p>We can use this array in our template like so:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Dear [(${name})],
+
+Here are the names you requested:
+&lt;ul&gt;
+    &lt;li th:each=&quot;name : ${names}&quot;&gt;
+        &lt;span th:text=&quot;${name}&quot;&gt;&lt;/span&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+Sincerely,
+Kursaha Tech.
+
+
+JSON Data: {&quot;name&quot;: &quot;Josh&quot;, &quot;names&quot;: [&quot;John&quot;, &quot;Jane&quot;, &quot;Joe&quot;]}
+</code></pre>
+</doc-codeblock></div>
+<p>Output:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Dear Josh,
+
+Here are the names you requested:
+&lt;ul&gt;
+    &lt;li&gt;John&lt;/li&gt;
+    &lt;li&gt;Jane&lt;/li&gt;
+    &lt;li&gt;Joe&lt;/li&gt;
+&lt;/ul&gt;
+
+Sincerely,
+Kursaha Tech.
+</code></pre>
+</doc-codeblock></div>
+<p>In the above example, we use Thymeleaf&#x27;s th:each attribute to iterate over the names array and create an HTML list of names. We also include a placeholder for the name of the person we are addressing the email to <code v-pre>[(${name})]</code>. This placeholder will be replaced with the value of the name property in the JSON data.</p>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
