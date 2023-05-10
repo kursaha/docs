@@ -77,5 +77,5 @@ Header value for `List-Unsubscribe` looks like this in the raw email
 :::code source="../static/code/sendMail.java" title="sendMail.java" :::
 
 +++ Curl
-
+:::code source="../static/code/send_mail.sh" :::
 +++
