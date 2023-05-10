@@ -8,7 +8,7 @@ class Demo {
     private final String requestIdentifier = UUID.randomUUID().toString();
 
     public static void main(String[] args) {
-        String apiKey = "<Demo-Api-key>";
+        String apiKey = "<replace-me-with-api-key>";
 
         // Create an object of KursahaClient
         kursahaClient = new KursahaClient(apiKey);
@@ -27,6 +27,7 @@ class Demo {
             "<mailto:unsubscribe@example.com>, <http://www.unsubscribe.example.com/>" // unsubscribedList
     );
 
-        System.out.println(kursahaClient.mk.sendMail(requestDto));
+        MailResponseDto responseDto = kursahaClient.mk.sendMail(requestDto);
+        System.out.println("got trace Id as: ", responseDto.getTraceId());
     }
 }
