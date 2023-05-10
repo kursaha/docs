@@ -22,6 +22,6 @@ Once you have successfully generated a Mailkeets API key, make sure to store it 
 
 ##### Using the Mailkeets API Key
 
-The Mailkeets API key is a secret key that you can use for authentication purposes when interacting with Mailkeets through the API. You can use our [MailSdk](./MailSdk.md) to integrate Mailkeets into your application.
+The Mailkeets API key is a secret key that you can use for authentication purposes when interacting with Mailkeets through the API. You can use our [MailSdk](../developer/MailSdk.md) to integrate Mailkeets into your application.
 
 Keep in mind that the Mailkeets API key should be treated as a sensitive information and should not be shared with anyone who doesn't need access to it.

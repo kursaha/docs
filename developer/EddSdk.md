@@ -1,14 +1,12 @@
 ---
-order: 97
+order: 99
 icon: tools
-tags: [mailkeets, configuration]
+tags: [edd, configuration]
 ---
 
-# Mail Sdk
+# Edd Sdk
 
-!!!info :bulb: SDK
-SDK stands for **Software Development Kit**, which provides a set of libraries and tools that you can integrate into your application.
-!!!
+
 
 To access Mailkeets, we offer an SDK called Kursaha-sdk.  We plan to release the SDK in other languages in the future.
 
@@ -23,7 +21,7 @@ Add these headers
 +++
 
 
-Before proceeding with further illustration, it is mandatory to have an API Key for using the SDK. If you don't have a Mailkeets API Key, please refer to [this page](./MailApiKey.md) for instructions on how to generate one.
+Before proceeding with further illustration, it is mandatory to have an API Key for using the SDK. If you don't have a Mailkeets API Key, please refer to [this page](../mailkeets/MailApiKey.md) for instructions on how to generate one.
 
 
 ## Methods in the SDK
