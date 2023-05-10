@@ -14,9 +14,29 @@ These documentation provides how you can use Kursaha sdk's to seamlessly connect
 
 
 +++ Java
-You can download it from the [Maven repository](https://mvnrepository.com/artifact/com.kursaha/java-sdk){target="_blank"}.
+```
+// build.gradle
+dependencies {
+    ...
+    // https://mavenlibs.com/maven/dependency/com.kursaha/java-sdk
+    implementation 'com.kursaha:java-sdk:0.0.16'
+}
+
+```
+
 +++ NodeJs
-You can download it from the [NPM](https://www.npmjs.com/package/kursaha-sdk){target="_blank"}.
+```
+  // package.json
+  "dependencies": {
+    ...
+    "kursaha-sdk": "^1.0.8",
+  }
+```
+
++++ GoLang
+In progress
+
+
 +++ Rest API
 Add these headers
 1. **Content-Type** : You must set the content-type header to 'application/json'. Key-pair will look like Content-Type: application/json.

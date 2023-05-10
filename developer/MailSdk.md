@@ -6,23 +6,30 @@ tags: [mailkeets, configuration]
 
 # Mail Sdk
 
-Before proceeding with further illustration, it is mandatory to have an API Key for using the SDK. If you don't have a Mailkeets API Key, please refer to [this page](../mailkeets/MailApiKey.md) for instructions on how to generate one.
+Before proceeding with further illustration, it is mandatory to have an API Key for using the SDK. If you don't have a Mailkeets API Key, please refer to [this page](../settings/ApiKey.md) for instructions on how to generate one.
 
 
 ## Methods in the SDK
 
-1. Get all verified domains: This method returns all verified domains saved in your account.
+### Get all verified domains:
+
+This method returns all verified domains saved in your account.
 
 **Demo Code Snippet**
 
 +++ Java
 :::code source="../static/code/getVerifiedDomain.java" :::
+
++++ GoLang
+
 +++ Curl
 :::code source="../static/code/get_verified_domain.sh" :::
 +++
 
 
-2. Send mail : With this method, You can send email to your recipient. There are some mandatory fields you have to provide.
+### Send mail
+
+With this method, You can send email to your recipient. There are some mandatory fields you have to provide.
 
 
 - **to** : The recipient's email address.
@@ -58,6 +65,9 @@ Header value for `List-Unsubscribe` looks like this in the raw email
 +++ Java
 
 :::code source="../static/code/sendMail.java" title="sendMail.java" :::
+
++++ GoLang
+
 
 +++ Curl
 :::code source="../static/code/send_mail.sh" :::
