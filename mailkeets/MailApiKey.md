@@ -4,7 +4,7 @@ icon: mail
 tags: [mailkeets, configuration]
 ---
 
-# Set Mail Api
+# Set Mail Api Key
 This page explains how to create a Mailkeets api key and how to use that key. Before you begin, If you do not have any Mailkeets account please create one.
 
 ### Create an api key
