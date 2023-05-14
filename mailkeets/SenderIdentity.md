@@ -21,7 +21,7 @@ Enter your Domain name on that specified space.
 
 ### Verify domain
 Please add your dns records in the dns providers. After that from the sender domain page, mark the check box and click on verify. 
-If the verification is successfull, you can create [mail api key](MailApiKey.md) to send email to your customers. 
+If the verification is successfull, you can create [mail api key](../settings/ApiKey.md) to send email to your customers. 
 
 **Note**
 It may take some time to complete verification process.

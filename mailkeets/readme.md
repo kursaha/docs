@@ -17,4 +17,4 @@ Grow your Business with Email Automation
 
 #### To setup **Mailkeets** you have to complete few steps
 1. Verify [Sender Domain](SenderIdentity.md)
-2. Create [Mail Api key](MailApiKey.md)
+2. Create [Api key](../settings/ApiKey.md)

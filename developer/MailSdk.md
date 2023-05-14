@@ -11,25 +11,6 @@ Before proceeding with further illustration, it is mandatory to have an API Key 
 
 ## Methods in the SDK
 
-### Get all verified domains:
-
-This method returns all verified domains saved in your account.
-
-**Demo Code Snippet**
-
-+++ Java
-:::code source="../static/code/getVerifiedDomain.java" :::
-
-+++ GoLang
-```go
-#todo
-```
-
-+++ Curl
-:::code source="../static/code/get_verified_domain.sh" :::
-+++
-
-
 ### Send mail
 
 With this method, You can send email to your recipient. There are some mandatory fields you have to provide.
@@ -92,4 +73,22 @@ if err != nil {
 
 +++ Curl
 :::code source="../static/code/send_mail.sh" :::
++++
+
+### Get all verified domains:
+
+This method returns all verified domains saved in your account.
+
+**Demo Code Snippet**
+
++++ Java
+:::code source="../static/code/getVerifiedDomain.java" :::
+
++++ GoLang
+```go
+#todo
+```
+
++++ Curl
+:::code source="../static/code/get_verified_domain.sh" :::
 +++
