@@ -21,6 +21,9 @@ This method returns all verified domains saved in your account.
 :::code source="../static/code/getVerifiedDomain.java" :::
 
 +++ GoLang
+```go
+#todo
+```
 
 +++ Curl
 :::code source="../static/code/get_verified_domain.sh" :::
@@ -67,6 +70,24 @@ Header value for `List-Unsubscribe` looks like this in the raw email
 :::code source="../static/code/sendMail.java" title="sendMail.java" :::
 
 +++ GoLang
+```go
+dto := mailkeets.MailRequestDto{
+    FromName:          "Bob",
+    FromAddress:       "bob@joe.com",
+    To:                "receiver@gmail.com",
+    Subject:           "Hello from golang",
+    ContentType:       "text/plain",
+    Body:              "This is go lang sample",
+    RequestIdentifier: uuid.New().String(),
+    UnsubscribedList:  "",
+}
+err := client.Mk.SendEmail(dto)
+if err != nil {
+    print(err.Error())
+} else {
+    print("successfully send mail!")
+}
+```
 
 
 +++ Curl

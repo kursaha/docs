@@ -25,7 +25,7 @@ Initialize client as below
 ```
 +++ GoLang
 ```go
-#todo
+kursahaClient := kursaha.NewKursaha("<YOUR-API-KEY>")
 ```
 +++
 
@@ -37,7 +37,20 @@ Initialize client as below
 :::code source="../static/code/signalStartEvent.java" range="21-29" :::
 
 +++ Golang
-
+```go
+signal := edd.Signal{
+    EmitterID:           "unique-emitter-id",
+    StepNodeID:          "step-node-id",
+    Data:                map[string]interface{}{},
+    EventFlowIdentifier: "uuid",
+}
+err := client.Edd.SendSignal([]edd.Signal{})
+if err != nil {
+    print(err.Error())
+} else {
+    print("successfully send signal!")
+}
+```
 +++ Curl
 ```bash
 curl --location 'https://edd.kursaha.com/api/event-flows/signal' \

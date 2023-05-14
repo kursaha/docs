@@ -34,7 +34,9 @@ dependencies {
 ```
 
 +++ GoLang
-In progress
+```go
+go get github.com/kursaha/go-sdk
+```
 
 
 +++ Rest API
