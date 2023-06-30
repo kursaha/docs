@@ -24,14 +24,14 @@ We use [Thymeleaf](https://www.thymeleaf.org/index.html) for mail templating. Wh
 
 ### Placeholder Format
 
-When writing a template, it is important to use proper placeholders. The format for placeholders should be as follows: `[(${value.textValue()})]`. Here, `value` is the query mapping name that you have given to build the query.
+When writing a template, it is important to use proper placeholders. The format for placeholders should be as follows: `[(${value})]`. Here, `value` is the query mapping name that you have given to build the query.
 
 #### Sample with Default Value
 
 Consider the following sample template:
 
 ```
-Dear [(${name.textValue() != null ? name : 'Valuable Customer'})],
+Dear [(${name != null ? name : 'Valuable Customer'})],
 Please find attached the results of the report you requested.
 
 Sincerely,
@@ -64,12 +64,12 @@ Suppose we have an array of names in our JSON data, like this:
 We can use this array in our template like so:
 
 ```
-Dear [(${name.textValue()})],
+Dear [(${name})],
 
 Here are the names you requested:
 <ul>
     <li th:each="name : ${names}">
-        <span th:text="${name.textValue()}"></span>
+        <span th:text="${name}"></span>
     </li>
 </ul>
 
@@ -98,4 +98,4 @@ Kursaha Tech.
 
 ```
 
-In the above example, we use Thymeleaf's th:each attribute to iterate over the names array and create an HTML list of names. We also include a placeholder for the name of the person we are addressing the email to `[(${name.textValue()})]`. This placeholder will be replaced with the value of the name property in the JSON data.
+In the above example, we use Thymeleaf's th:each attribute to iterate over the names array and create an HTML list of names. We also include a placeholder for the name of the person we are addressing the email to `[(${name})]`. This placeholder will be replaced with the value of the name property in the JSON data.
