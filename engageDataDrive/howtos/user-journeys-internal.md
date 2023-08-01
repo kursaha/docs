@@ -1,10 +1,10 @@
 ---
-label: How Eventflow works ?
+label: How User Journeys work ?
 icon: light-bulb
 
 ---
 
-## Eventflows with Temporal
+## User Journeys with Temporal
 
 !!!
 :bulb: Eventflow uses Temporal to trigger custom notifications to customers based on certain user actions, such as making a purchase. 
