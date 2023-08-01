@@ -1,10 +1,10 @@
 ---
-order: 96
-icon: mail
-tags: [email, mailkeets, engage-data-drive, case-studies]
+order: 94
+icon: log
+tags: [engage-data-drive, case-studies]
 ---
 
-# Explore Our Case Studies: Unveiling Success Stories!
+# Explore Our Case Studies
 
 Discover how Kursaha has unlocked the potential of its powerful use cases through real-world examples. Dive into the success stories below:
 
