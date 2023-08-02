@@ -22,8 +22,23 @@ For businesses running product campaigns, identifying the right target audience 
 2. **Dynamic Audience Segmentation**: The collected real-time data is used to dynamically segment users based on their engagement levels and intent. Kursaha's model identifies users with high purchase intent and predicts their likelihood of converting, enabling the creation of custom audience segments.
 
 3. **Model Training**: Kursaha's AI-driven algorithms continuously analyze the real-time user data and train the predictive model. The model learns from historical data and adapts to changing user behaviors, making it robust and capable of identifying potential customers accurately.
+These alogorithms employs a sophisticated approach to continuously analyze real-time user data and undergo regular training to stay up-to-date with changing user behaviors. Here's how the model training process works:
 
-4. **Audience Prediction**: Once the model is trained, it predicts the likelihood of conversion for each user based on their real-time event history. Users are assigned a predictive score, indicating their probability of making a purchase.
+	a. **Data Collection**: Real-time user data from client websites and applications can be used as data. This data includes user interactions such as page views, add to cart actions, purchases, and any other relevant events.
+
+	b. **Data Preprocessing**: The gathered data is cleaned up and formatted appropriately for the model's training through preprocessing. In this stage, categorical variables are encoded, duplicates are eliminated, and missing values are handled.
+
+	c. **Feature Engineering**: The selection of relevant features is critical to the model's success. We engineer meaningful features from the collected data, which provide valuable insights into user behavior and purchasing intent.
+
+	d. **Model Selection**: After feature engineering, we explore various machine learning algorithms to identify the most appropriate one for our predictive model. This selection process considers the nature of the data, the problem at hand, and the desired performance metrics.
+
+	e. **Model Training and Validation**: This includes finding the similarity in our data with the use of machine learning algorithms. During the training this model finds the similarity between the users and their approach towards the product in the dataset.
+
+	f. **Model Evaluation**: This trained model can also be applied for the new data values for the users and can also find the users possible behavior.
+
+	g. **Continuous Learning**: Our model is designed for continuous learning. As new data comes in and user behaviors evolve, the model dynamically adapts to these changes, ensuring it remains up-to-date and maintains its accuracy over time.
+
+4. **Audience Prediction**: Once the model is trained, it predicts the likelihood of conversion for each user based on their real-time event history. Users are assigned a predictive score, indicating their probability of making a purchase. Users with higher predictive scores are more likely to convert, and businesses can prioritize their targeting efforts accordingly.
 
 5. **Campaign Targeting**: Armed with audience predictions, businesses can precisely target users with high conversion probability for the product campaign. Kursaha's platform seamlessly integrates with various advertising channels, allowing clients to execute targeted campaigns across multiple platforms.
 
