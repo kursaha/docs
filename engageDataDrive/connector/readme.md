@@ -4,11 +4,20 @@ icon: database
 tags: [data source, engage data drive]
 ---
 
-# Data Source 
-First of all, you have to create a Datasource. Datasource means the database connection details by which we can talk to your database schemas to fech data.
+# Connectors
+First of all, you have to create a Connector. Connectors are of 2 types:
+1. Source connector
+2. Destinator connector
 
-#### Currently our system supports these datasources
-- [Snowflake](snowflake.md)
-- [MySql](mysql.md) 
-- [BigQuery](bigquery.md)
-- [Google Sheet](googleSheet.md)
+## Source connector
+Source connector means the database connection details by which we can talk to your database schemas to fech data.
+
+#### Our system supports these data Sources
+- [Snowflake](./source/snowflake.md)
+- [MySql](./source/mysql.md) 
+- [BigQuery](./source/bigquery.md)
+- [Google Sheet](./source/googleSheet.md)
+
+#### Our system supports these data Destinations
+- [Facebook Ads](./destination/FacebookAds.md)
+- [Meta Pixel](./destination/MetaPixel.md)

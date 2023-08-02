@@ -15,5 +15,5 @@ One stop solution to reach out your customers
 - Provide businesses with a cost-effective way to improve their customer engagement and loyalty.
 
 #### To setup **Engage Data Drive** you have to complete few steps
-1. Create Data Source [Data Source](./dataSources/readme.md)
-2. Create Query that can read data [Queries](Queries.md)
+1. Create [Connectors](./connector/readme.md)
+2. Create [User Segments](UserSegment.md)
