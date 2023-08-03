@@ -1,7 +1,7 @@
 ---
-label: Stock Product Prediction - Leveraging Real-Time Insights for Efficient Inventory Management for Businesses
+order: 2
+label: CampaignGPT - Stock Product Prediction
 icon: light-bulb
-
 ---
 
 # Stock Product Prediction - Leveraging Real-Time Insights for Efficient Inventory Management for Businesses

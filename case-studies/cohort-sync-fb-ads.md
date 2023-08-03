@@ -1,4 +1,5 @@
 ---
+order: 1
 label: Cohort sync to Facebook Ads
 icon: light-bulb
 
