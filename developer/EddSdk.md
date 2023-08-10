@@ -79,3 +79,43 @@ The description for each fields in the signal are as below:
 4. stepNodeId: Step node id
 5. data: user data for the specific event
 6. eventflowIdentifier: Event flow identifier
+
+### Send Event
+You can send muliple events to this api. The api is
+```js
+  POST https://edd.kursaha.com/api/event-flows/signal
+```
+
++++ Curl
+```bash
+curl --location 'https://edd.kursaha.com/api/event-flows/signal' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <API-KEY>' \
+--data-raw '{
+    "signals": [
+        {
+            "userId": "<Unique-user-id>",
+            "eventType": "<event-type>",
+            "data": {
+                "firstName": "John",
+                "lastName": "Deo",
+                "email_id": "j.doe@swq.com",
+                "phone": "+1000-00-000",
+                "price" : 200,
+                "brand" : "something"
+            }
+        }
+    ]
+}'
+```
++++ Java
+
+// Coming soon
+
++++
+
+The description for each fields in the events are as below:
+1. userId: Unique user id to target perticular user.
+2. signals: Multiple signals can batch in one API call
+3. eventType: Specific [**event type**](../engageDataDrive/cohort/#cohort-events) for perticular user action.
+5. data: user data for the specific event
