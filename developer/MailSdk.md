@@ -1,10 +1,10 @@
 ---
 order: 100
-icon: tools
+icon: mail
 tags: [mailkeets, configuration]
 ---
 
-# Mail Sdk
+# Mailkeets
 
 Before proceeding with further illustration, it is mandatory to have an API Key for using the SDK. If you don't have a Mailkeets API Key, please refer to [this page](../settings/ApiKey.md) for instructions on how to generate one.
 
