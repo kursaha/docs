@@ -2,6 +2,7 @@
 order: 89
 icon: people
 tags: [campaign, engage data drive]
+label: Cohort
 ---
 
 # Cohort: Streamline Targeted Engagement with Cohorting
@@ -23,7 +24,7 @@ Item Purchased   | purchase         |  When a user completes a product purchase.
 
 ### Steps to Leverage Cohort Functionality
 
-1. To harness the **power of Cohorts**, utilize our API to seamlessly transmit [**user data**](../developer/eddsdk/#send-event) to our system.
+1. To harness the **power of Cohorts**, utilize our API to seamlessly transmit [**user data**](../developer/eddsdk/#sending-events-to-kursaha-seamlessly-integrate-user-data) to our system.
 2. Navigate to the Cohort section and select the *create new cohort* tab.
 3. Apply filters to user activity based on specific criteria, encompassing various actions discussed earlier.
 

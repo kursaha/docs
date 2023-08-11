@@ -1,15 +1,15 @@
 ---
-order: 99
-icon: tools
+order: 101
+icon: file-code
 tags: [edd, configuration]
 ---
 
-# Engage Data Drive Sdk
+# Engage Data Drive
 
 Before proceeding with further illustration, it is mandatory to have an API Key for using the SDK. If you don't have a Mailkeets API Key, please refer to [this page](../settings/ApiKey.md) for instructions on how to generate one.
 
 
-## Methods in the SDK
+## Methods
 
 Initialize client as below
 
@@ -80,9 +80,12 @@ The description for each fields in the signal are as below:
 5. data: user data for the specific event
 6. eventflowIdentifier: Event flow identifier
 
-### Send Event
-You can send muliple events to this api. The api is
-```js
+
+### Sending Events to Kursaha: Seamlessly Integrate User Data
+
+Effortlessly send multiple events to our API using the following endpoint:
+
+```bash
   POST https://edd.kursaha.com/api/event-flows/signal
 ```
 
@@ -98,7 +101,7 @@ curl --location 'https://edd.kursaha.com/api/event-flows/signal' \
             "eventType": "<event-type>",
             "data": {
                 "firstName": "John",
-                "lastName": "Deo",
+                "lastName": "Doe",
                 "email_id": "j.doe@swq.com",
                 "phone": "+1000-00-000",
                 "price" : 200,
@@ -114,8 +117,11 @@ curl --location 'https://edd.kursaha.com/api/event-flows/signal' \
 
 +++
 
-The description for each fields in the events are as below:
-1. userId: Unique user id to target perticular user.
-2. signals: Multiple signals can batch in one API call
-3. eventType: Specific [**event type**](../engageDataDrive/cohort/#cohort-events) for perticular user action.
-5. data: user data for the specific event
+Here's a breakdown of the fields within the events:
+
+1. **userId**: A distinctive user identifier for precise targeting.
+2. **signals**: Batch multiple signals in a single API call.
+3. **eventType**: Specify the [**event type**](../engageDataDrive/cohort/#utilizing-cohort-events) corresponding to a specific user action.
+4. **data**: User data associated with the particular event, including attributes such as first name, last name, email address, phone number, price, and brand.
+
+Leverage this seamless integration to transmit crucial user behavior data to Kursaha, enhancing your customer engagement and acquisition strategies. Connect with your audience like never before!
