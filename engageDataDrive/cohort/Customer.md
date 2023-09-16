@@ -1,7 +1,7 @@
 ---
 order: 88
 icon: person-fill
-tags: [customer, engage data drive]
+tags: [customer, campaign, engage data drive]
 ---
 
 # Customer
