@@ -6,10 +6,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.745045019563">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.4.1.748178596277">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.1.0">
+    <meta name="generator" content="Retype 3.4.1">
 
     <!-- Primary Meta Tags -->
     <title>Engage Data Drive - Customer engagement and business growth platform</title>
@@ -34,12 +34,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/favicon.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.1.0.745045019563" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.4.1.748178596277" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.1.0.745045019563" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.1.0.745045019563" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.1.0.745045019563" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.4.1.748178596277" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.4.1" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.4.1.748178596277" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.4.1.748178596277" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -253,7 +253,6 @@
                             <div class="docs-markdown" id="docs-content">
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
-                
                                 <!-- Page content  -->
 <doc-anchor-target id="engage-data-drive" class="break-words">
     <h1>
@@ -357,6 +356,55 @@ if err != nil {
 <li>data: user data for the specific event</li>
 <li>eventflowIdentifier: Event flow identifier</li>
 </ol>
+<doc-anchor-target id="sending-customer-data-to-kursaha">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sending-customer-data-to-kursaha">#</doc-anchor-trigger>
+        <span>Sending Customer data to Kursaha</span>
+    </h3>
+</doc-anchor-target>
+<p>Send your unique customer data to our API using the following endpoint:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">  POST https://edd.kursaha.com/api/customers</code></pre>
+</doc-codeblock></div>
+<doc-tabs>
+<doc-tab v-cloak id="curl">
+<template #title>Curl</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">curl --location 'https://edd.kursaha.com/api/customers' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer &lt;API-KEY&gt;' \
+--data-raw '{
+    &quot;customerId&quot;: &quot;&lt;Unique-customer-id&gt;&quot;,
+    &quot;customerData&quot;: {
+        &quot;email&quot;: &quot;j.doe@swq.com&quot;,
+        &quot;phoneNumber&quot;: &quot;+911002220000&quot;,
+        &quot;firstName&quot;: &quot;John&quot;,
+        &quot;lastName&quot;: &quot;Doe&quot;,
+        &quot;gender&quot;: &quot;&quot;,
+        &quot;dob&quot;:&quot;&quot;,
+        &quot;city&quot;: &quot;&quot;,
+        &quot;state&quot;: &quot;&quot;,
+        &quot;country&quot;: &quot;&quot;,
+        &quot;zip&quot;: &quot;&quot;
+    }
+}'</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="java">
+<template #title>Java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Unique Id of your Customer
+String customerId = &quot;&lt;Unique-customer-id&gt;&quot;;
+
+// Details of your Customer
+CustomerData customerData = new CustomerData();
+customerData.setEmail(&quot;john.deo@sqs.com&quot;);
+// ... Please provide all the details of that customer
+
+kursahaClient.edd.sendCustomerData(customerId, customerData);</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
 <doc-anchor-target id="sending-events-to-kursaha-seamlessly-integrate-user-data">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#sending-events-to-kursaha-seamlessly-integrate-user-data">#</doc-anchor-trigger>
@@ -377,15 +425,16 @@ if err != nil {
 --data-raw '{
     &quot;signals&quot;: [
         {
-            &quot;userId&quot;: &quot;&lt;Unique-user-id&gt;&quot;,
+            &quot;customerId&quot;: &quot;&lt;Unique-customer-id&gt;&quot;,
             &quot;eventType&quot;: &quot;&lt;event-type&gt;&quot;,
             &quot;data&quot;: {
-                &quot;firstName&quot;: &quot;John&quot;,
-                &quot;lastName&quot;: &quot;Doe&quot;,
-                &quot;email_id&quot;: &quot;j.doe@swq.com&quot;,
-                &quot;phone&quot;: &quot;+1000-00-000&quot;,
                 &quot;price&quot; : 200,
-                &quot;brand&quot; : &quot;something&quot;
+                &quot;brand&quot; : &quot;something&quot;,
+                &quot;productId&quot;: &quot;&quot;,
+                &quot;category&quot; : &quot;&quot;,
+                &quot;subCategory1&quot; : &quot;&quot;,
+                &quot;subCategory2&quot; : &quot;&quot;,
+                &quot;subCategory3&quot; : &quot;&quot;
             }
         }
     ]
@@ -399,10 +448,10 @@ if err != nil {
 </doc-tabs>
 <p>Here&#x27;s a breakdown of the fields within the events:</p>
 <ol>
-<li><strong>userId</strong>: A distinctive user identifier for precise targeting.</li>
+<li><strong>customerId</strong>: A distinctive user identifier for precise targeting.</li>
 <li><strong>signals</strong>: Batch multiple signals in a single API call.</li>
 <li><strong>eventType</strong>: Specify the <a href="../../engagedatadrive/cohort/#utilizing-cohort-events"><strong>event type</strong></a> corresponding to a specific user action.</li>
-<li><strong>data</strong>: User data associated with the particular event, including attributes such as first name, last name, email address, phone number, price, and brand.</li>
+<li><strong>data</strong>: User data associated with the particular event, including attributes price, brand, productId, category, subCategory1, subCategory2, subCategory3 etc.</li>
 </ol>
 <p>Leverage this seamless integration to transmit crucial user behavior data to Kursaha, enhancing your customer engagement and acquisition strategies. Connect with your audience like never before!</p>
 
@@ -411,10 +460,10 @@ if err != nil {
                                         <a href="../../tags/">
                                             <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
                                         </a>
-                                        <span class="mr-2"><a href="../../tags/edd/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                        <span class="mr-2"><a href="../../tags/edd/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
                                     <span>edd</span>
                                 </a></span>
-                                        <span class="mr-2"><a href="../../tags/configuration/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                        <span class="mr-2"><a href="../../tags/configuration/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
                                     <span>configuration</span>
                                 </a></span>
                                     </span>
@@ -510,7 +559,7 @@ if err != nil {
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Engage Data Drive", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Engage Data Drive", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
     <script data-cfasync="false">window.$crisp=[];window.CRISP_WEBSITE_ID="c84511d8-abd9-4399-be8c-474ae5879ac4";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </body>
 </html>
