@@ -29,6 +29,18 @@ public class KursahaEventflowExample {
         kursahaClient.edd.signal(eventflowIdentifier, stepNodeId, emitterId);
     }
 
+    public void sendCustomerData() {
+        // Unique Id of your Customer
+        String customerId = "<Unique-customer-id>";
+
+        // Details of your Customer
+        CustomerData customerData = new CustomerData();
+        customerData.setEmail("john.deo@sqs.com");
+        // ... Please provide all the details of that customer
+
+        kursahaClient.edd.sendCustomerData(customerId, customerData);
+    }
+
     public static void main(String[] args) throws Exception {
         KursahaEventflowExample kursahaEventflowExample = new KursahaEventflowExample();
         kursahaEventflowExample.sendStartEvent();
