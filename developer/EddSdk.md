@@ -80,6 +80,38 @@ The description for each fields in the signal are as below:
 5. data: user data for the specific event
 6. eventflowIdentifier: Event flow identifier
 
+### Sending Customer data to Kursaha
+Send your unique customer data to our API using the following endpoint:
+
+```bash
+  POST https://edd.kursaha.com/api/customers
+```
++++ Curl
+```bash
+curl --location 'https://edd.kursaha.com/api/customers' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <API-KEY>' \
+--data-raw '{
+    "customerId": "<Unique-customer-id>",
+    "customerData": {
+        "email": "j.doe@swq.com",
+        "phoneNumber": "+911002220000",
+        "firstName": "John",
+        "lastName": "Doe",
+        "gender": "",
+        "dob":"",
+        "city": "",
+        "state": "",
+        "country": "",
+        "zip": ""
+    }
+}'
+```
+
++++ Java
+:::code source="../static/code/signalStartEvent.java" range="33-41" :::
++++
+
 
 ### Sending Events to Kursaha: Seamlessly Integrate User Data
 
@@ -97,15 +129,16 @@ curl --location 'https://edd.kursaha.com/api/event-flows/signal' \
 --data-raw '{
     "signals": [
         {
-            "userId": "<Unique-user-id>",
+            "customerId": "<Unique-customer-id>",
             "eventType": "<event-type>",
             "data": {
-                "firstName": "John",
-                "lastName": "Doe",
-                "email_id": "j.doe@swq.com",
-                "phone": "+1000-00-000",
                 "price" : 200,
-                "brand" : "something"
+                "brand" : "something",
+                "productId": "",
+                "category" : "",
+                "subCategory1" : "",
+                "subCategory2" : "",
+                "subCategory3" : ""
             }
         }
     ]
@@ -119,9 +152,9 @@ curl --location 'https://edd.kursaha.com/api/event-flows/signal' \
 
 Here's a breakdown of the fields within the events:
 
-1. **userId**: A distinctive user identifier for precise targeting.
+1. **customerId**: A distinctive user identifier for precise targeting.
 2. **signals**: Batch multiple signals in a single API call.
 3. **eventType**: Specify the [**event type**](../engageDataDrive/cohort/#utilizing-cohort-events) corresponding to a specific user action.
-4. **data**: User data associated with the particular event, including attributes such as first name, last name, email address, phone number, price, and brand.
+4. **data**: User data associated with the particular event, including attributes price, brand, productId, category, subCategory1, subCategory2, subCategory3 etc.
 
 Leverage this seamless integration to transmit crucial user behavior data to Kursaha, enhancing your customer engagement and acquisition strategies. Connect with your audience like never before!
