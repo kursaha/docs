@@ -6,10 +6,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.4.1.748181388930">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.749656459018">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.4.1">
+    <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
     <title>Template - Customer engagement and business growth platform</title>
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/favicon.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.4.1.748181388930" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.749656459018" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.4.1.748181388930" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.4.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.4.1.748181388930" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.749656459018" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.749656459018" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -277,6 +277,13 @@
 <li>Give the template a name.</li>
 <li>Choose the type of template you want to create, such as mail or message.</li>
 </ol>
+<doc-anchor-target id="placeholder-format">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#placeholder-format">#</doc-anchor-trigger>
+        <span>Placeholder Format</span>
+    </h3>
+</doc-anchor-target>
+<p>When writing a template, it is important to use proper placeholders. The format for placeholders should be as follows: <code v-pre>[(${value})]</code>. Here, <code v-pre>value</code> is the query mapping name that you have given to build the query.</p>
 <doc-anchor-target id="mail-template">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#mail-template">#</doc-anchor-trigger>
@@ -288,13 +295,6 @@
 <li>Choose the type of template you want to create, such as text or HTML.</li>
 <li>Write your template, and include placeholders where you want dynamic content to appear.</li>
 </ol>
-<doc-anchor-target id="placeholder-format">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#placeholder-format">#</doc-anchor-trigger>
-        <span>Placeholder Format</span>
-    </h3>
-</doc-anchor-target>
-<p>When writing a template, it is important to use proper placeholders. The format for placeholders should be as follows: <code v-pre>[(${value})]</code>. Here, <code v-pre>value</code> is the query mapping name that you have given to build the query.</p>
 <doc-anchor-target id="sample-with-default-value">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#sample-with-default-value">#</doc-anchor-trigger>
@@ -364,6 +364,42 @@ Kursaha Tech.
 </code></pre>
 </doc-codeblock></div>
 <p>In the above example, we use Thymeleaf&#x27;s th:each attribute to iterate over the names array and create an HTML list of names. We also include a placeholder for the name of the person we are addressing the email to <code v-pre>[(${name})]</code>. This placeholder will be replaced with the value of the name property in the JSON data.</p>
+<doc-anchor-target id="text-to-speech-template">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#text-to-speech-template">#</doc-anchor-trigger>
+        <span>Text To Speech Template</span>
+    </h3>
+</doc-anchor-target>
+<p><strong>Creating a Text-to-Speech Template:</strong></p>
+<ol>
+<li><p>Navigate to Templates -&gt; Create New Template -&gt; Text To Speech.</p>
+</li>
+<li><p>During template creation, ensure you:</p>
+<ul>
+<li>Provide a meaningful name.</li>
+<li>Input the text message for audio conversion, supporting dynamic placeholders for personalized content and accommodating multiple messages in different languages.</li>
+<li>Choose a wrapper ID, currently only supported in WhatsApp. For calls with this message, no wrapper ID selection is necessary; direct calling through the channel is available.</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="text-to-video-template">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#text-to-video-template">#</doc-anchor-trigger>
+        <span>Text To Video Template</span>
+    </h3>
+</doc-anchor-target>
+<p><strong>Creating a Text-to-Video Template:</strong></p>
+<ol>
+<li><p>Navigate to Templates -&gt; Create New Template -&gt; Text To Video.</p>
+</li>
+<li><p>During template creation, ensure you:</p>
+<ul>
+<li>Provide a meaningful name.</li>
+<li>Input the text message for video conversion, supporting dynamic placeholders for personalized content and accommodating multiple messages in different languages.</li>
+<li>Choose a wrapper ID, currently only supported in WhatsApp. A wrapper ID selection is necessary by which you can send video to Whatsapp.</li>
+</ul>
+</li>
+</ol>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
