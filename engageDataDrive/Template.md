@@ -15,16 +15,16 @@ To create a template, follow these steps:
 1. Give the template a name.
 2. Choose the type of template you want to create, such as mail or message.
 
+### Placeholder Format
+
+When writing a template, it is important to use proper placeholders. The format for placeholders should be as follows: `[(${value})]`. Here, `value` is the query mapping name that you have given to build the query.
+
 ### Mail Template
 
 We use [Thymeleaf](https://www.thymeleaf.org/index.html) for mail templating. When creating a mail template, you need to:
 
 1. Choose the type of template you want to create, such as text or HTML.
 2. Write your template, and include placeholders where you want dynamic content to appear.
-
-### Placeholder Format
-
-When writing a template, it is important to use proper placeholders. The format for placeholders should be as follows: `[(${value})]`. Here, `value` is the query mapping name that you have given to build the query.
 
 #### Sample with Default Value
 
@@ -99,3 +99,25 @@ Kursaha Tech.
 ```
 
 In the above example, we use Thymeleaf's th:each attribute to iterate over the names array and create an HTML list of names. We also include a placeholder for the name of the person we are addressing the email to `[(${name})]`. This placeholder will be replaced with the value of the name property in the JSON data.
+
+### Text To Speech Template
+
+**Creating a Text-to-Speech Template:**
+
+1. Navigate to Templates -> Create New Template -> Text To Speech.
+
+2. During template creation, ensure you:
+   - Provide a meaningful name.
+   - Input the text message for audio conversion, supporting dynamic placeholders for personalized content and accommodating multiple messages in different languages.
+   - Choose a wrapper ID, currently only supported in WhatsApp. For calls with this message, no wrapper ID selection is necessary; direct calling through the channel is available.
+
+### Text To Video Template
+
+**Creating a Text-to-Video Template:**
+
+1. Navigate to Templates -> Create New Template -> Text To Video.
+
+2. During template creation, ensure you:
+   - Provide a meaningful name.
+   - Input the text message for video conversion, supporting dynamic placeholders for personalized content and accommodating multiple messages in different languages.
+   - Choose a wrapper ID, currently only supported in WhatsApp. A wrapper ID selection is necessary by which you can send video to Whatsapp.
