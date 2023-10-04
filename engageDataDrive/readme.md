@@ -16,4 +16,4 @@ One stop solution to reach out your customers
 
 #### To setup **Engage Data Drive** you have to complete few steps
 1. Create [Connectors](./connector/readme.md)
-2. Create [User Segments](UserSegment.md)
+2. Create [User Segments](/engageDataDrive/segment/readme.md)

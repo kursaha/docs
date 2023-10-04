@@ -28,7 +28,7 @@ These steps demostrate how a workflow can be triggered and processed.
 
 ### Technical Architecture
 Below image demostrate how the event flows from customer enviornment to Kursaha systems and to Temporal.
-![](../../static/eventflow_temporal.png)
+![](/static/eventflow_temporal.png)
 
 
 ### Benefits of Using Temporal for Custom Notifications

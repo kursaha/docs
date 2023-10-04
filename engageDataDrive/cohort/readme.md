@@ -24,7 +24,7 @@ Item Purchased   | purchase         |  When a user completes a product purchase.
 
 ### Steps to Leverage Cohort Functionality
 
-1. To harness the **power of Cohorts**, utilize our API to seamlessly transmit [**user event data**](../developer/eddsdk/#sending-events-to-kursaha-seamlessly-integrate-user-data) to our system. Please give Customer id same as [this](../developer/EddSdk.md/#sending-customer-data-to-kursaha). 
+1. To harness the **power of Cohorts**, utilize our API to seamlessly transmit [**user event data**](/developer/eddsdk/#sending-events-to-kursaha-seamlessly-integrate-user-data) to our system. Please give Customer id same as [this](/developer/EddSdk.md/#sending-customer-data-to-kursaha). 
 2. Navigate to the Cohort section and select the *create new cohort* tab.
 3. Apply filters to user activity based on specific criteria, encompassing various actions discussed earlier.
 

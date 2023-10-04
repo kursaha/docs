@@ -111,6 +111,8 @@ In the above example, we use Thymeleaf's th:each attribute to iterate over the n
    - Input the text message for audio conversion, supporting dynamic placeholders for personalized content and accommodating multiple messages in different languages.
    - Choose a wrapper ID, currently only supported in WhatsApp. For calls with this message, no wrapper ID selection is necessary; direct calling through the channel is available.
 
+![Sample Text To Speech](/static/videos/Text_to_speech.mp4)
+
 ### Text To Video Template
 
 **Creating a Text-to-Video Template:**
