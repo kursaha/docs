@@ -11,8 +11,8 @@ Chat automation refers to the use of automated systems, often powered by artific
 
 ### Utilizing Chat Automation Feature:
 
-1. Prepare CSV: Create a CSV file with sample questions and answers. You can find a sample here.
+1. Prepare CSV: Create a CSV file with sample questions and answers. You can find a sample [here](/static/csv/chat_automation.csv).
 
 2. Upload to Chat Automation Page: Navigate to our Chat Automation page and upload the CSV file. Once uploaded, our system generates automated answers for similar questions.
 
-3. Android App Integration: To integrate Chat Automation into your Android app, utilize our Android SDK. This SDK facilitates seamless integration, allowing your app to leverage the automated response capabilities.
+3. Android App Integration: To integrate Chat Automation into your Android app, utilize our [Android SDK](https://github.com/kursaha/android-sdk). This SDK facilitates seamless integration, allowing your app to leverage the automated response capabilities.
