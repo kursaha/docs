@@ -2,9 +2,6 @@ input: ./
 output: .retype
 url: docs.kursaha.com
 
-include:
-  - "sitemap.xml"
-
 favicon: static/favicon.png
 
 branding:
