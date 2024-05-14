@@ -6,6 +6,8 @@ tags: [data source, engage data drive]
 
 # MySql
 
+This page contains the setup guide and reference information for the MySql source connector.
+
 ### To Connect with Mysql database
 - Make sure that your Mysql database is up and running
 - Create a dedicated read-only user with access to all tables needed.

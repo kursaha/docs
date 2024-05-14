@@ -4,7 +4,9 @@ icon: dot
 tags: [data source, engage data drive]
 ---
 
-# SnowFlake
+# Snowflake
+
+This page contains the setup guide and reference information for the Snowflake source connector.
 
 ### To Connect with Snowflake database
 There are two options

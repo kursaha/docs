@@ -6,6 +6,12 @@ tags: [data source, engage data drive]
 
 # Google Sheet
 
+This page contains the setup guide and reference information for the Google Sheets source connector.
+
+### Checkout the *How to* video for connecting Google Sheet with Google Service Account 
+
+[!embed el="embed"](https://youtu.be/Ozzf0u2Chwc)
+
 ## To Connect with Google Sheet
 
 1. Enable the [Google Cloud Platform APIs](https://support.google.com/googleapi/answer/6158841?hl=en) for your personal or organization account.
@@ -47,8 +53,3 @@ Spreadsheet Link  | Enter the link to the Google spreadsheet you want to sync. [
 - Paste the client_email which you have copied earlier.
 - Grant permission to Viewer.
 - Share that sheet.
-
-### Checkout the *How to* video for connecting Google Sheet with Google Service Account 
-
-[!embed el="embed"](https://youtu.be/Ozzf0u2Chwc)
-

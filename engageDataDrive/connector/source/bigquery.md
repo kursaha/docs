@@ -6,6 +6,8 @@ tags: [data source, engage data drive]
 
 # BigQuery
 
+This page contains the setup guide and reference information for the Big Query source connector.
+
 ### To Connect with BigQuery
 - A Google Cloud Project with BigQuery enabled
 - A Google Cloud Service Account with the "BigQuery User" and "BigQuery Data Editor" roles in your GCP project
