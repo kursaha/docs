@@ -1,5 +1,5 @@
 ---
-order: 100
+order: 99
 icon: verified
 tags: [email, security]
 ---

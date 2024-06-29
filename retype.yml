@@ -52,8 +52,6 @@ footer:
       icon: shield-check
 
 integrations:
-  crisp:
-    id: c84511d8-abd9-4399-be8c-474ae5879ac4
   googleAnalytics:
     id: G-5XQ0NQYLYC
 

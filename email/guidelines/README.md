@@ -1,6 +1,7 @@
 ---
 label: Marketing emails
 icon: tasklist
+order: 101
 ---
 # Marketing email writing Guidlines
 
