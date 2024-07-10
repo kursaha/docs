@@ -1,0 +1,29 @@
+Welcome, [(${name})]!
+
+Thanks for trying [(${productName})]. We’re thrilled to have you on board. To get the most out of [(${productName})], do this primary next step:
+
+Do this Next
+
+For reference, here's your login information:
+
+Login Page: [(${valueloginUrl})]
+Username: [(${username})]
+
+You've started a [(${trialLength})] day trial. You can upgrade to a paying account or cancel any time.
+
+Trial Start Date: [(${trialStartDate})]
+Trial End Date: [(${trialEndDate})]
+
+If you have any questions, feel free to email our customer success team. (We're lightning quick at replying.) We also offer live chat during business hours.
+
+Thanks,
+The [(${productName})] team
+
+P.S. Need immediate help getting started? Check out our help documentation. Or, just reply to this email, the [(${productName})] support team is always ready to help!
+
+If you’re having trouble with the button above, copy and paste the URL below into your web browser.
+[(${actionUrl})]
+
+[(${company})]
+1234 Street Rd.
+Suite 1234
