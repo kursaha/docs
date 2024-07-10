@@ -1,0 +1,13 @@
+[
+    {
+        "_id": 0,
+        "content": "https://docs.kursaha.com/static/code/templates/welcome-email/index.html",
+        "searchContent": "https://docs.kursaha.com/static/code/templates/welcome-email/search.txt",
+        "subject": "Welcome to [(${store})] – Thank You for Joining Us!",
+        "contentTemplateType": "MAIL",
+        "contentType": "text/plain",
+        "editorType": "PLAIN_TEXT",
+        "language": "ENGLISH_UK",
+        "imageUrl": "https://docs.kursaha.com/static/code/templates/welcome-email/preview.png"
+      }
+]
