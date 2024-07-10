@@ -5,8 +5,8 @@
         "searchContent": "https://docs.kursaha.com/static/code/templates/welcome-email/search.txt",
         "subject": "Welcome to [(${store})] – Thank You for Joining Us!",
         "contentTemplateType": "MAIL",
-        "contentType": "text/plain",
-        "editorType": "PLAIN_TEXT",
+        "contentType": "text/html",
+        "editorType": "HTML",
         "language": "ENGLISH_UK",
         "imageUrl": "https://docs.kursaha.com/static/code/templates/welcome-email/preview.png"
       }
