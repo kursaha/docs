@@ -50,8 +50,3 @@ Have questions or need support? Reach out to us at:
 - **Email**: support@kursaha.com
 
 We’re here to help you unlock the full potential of Kursaha and drive your marketing success.
-
-### Case Studies
-
-Explore how Kursaha has helped various companies achieve their marketing goals through real-world examples of our features in action.
-Thank you for choosing Kursaha. We look forward to helping you transform your customer engagement and acquisition strategies!

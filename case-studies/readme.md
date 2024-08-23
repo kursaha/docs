@@ -6,6 +6,12 @@ tags: [engage-data-drive, case-studies, campaignGPT]
 
 # Explore Our Case Studies
 
+
+Explore how Kursaha has helped various companies achieve their marketing goals through real-world examples of our features in action.
+Thank you for choosing Kursaha. We look forward to helping you transform your customer engagement and acquisition strategies!
+
+### Case Studies
+
 Discover how Kursaha has unlocked the potential of its powerful use cases through real-world examples. Dive into the success stories below:
 
 1. [How Kursaha Drives Exponential Growth with Custom Audiences and Look-Alike Users](cohort-sync-fb-ads.md): Learn how Kursaha harnessed the magic of custom audiences and look-alike users, leading to exceptional customer acquisition and expansion.
