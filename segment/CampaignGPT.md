@@ -1,10 +1,11 @@
 ---
-order: 87
+order: 97
 icon: hubot
 tags: [campaign gpt, segment, engage data drive]
 ---
 
 # Campaign GPT
+
 Campaign GPT is an advanced AI system designed to identify and target users with similar characteristics and behaviors according to your specified criteria. It leverages powerful machine learning algorithms to analyze user data and discover patterns that can guide your marketing efforts. By understanding user similarities, Campaign GPT enhances your ability to tailor campaigns for more effective customer engagement, making it a valuable tool for businesses seeking to optimize their marketing strategies and reach their target audience with precision.
 
 # How to use Campaign GPT
@@ -14,4 +15,4 @@ Campaign GPT is an advanced AI system designed to identify and target users with
 
 ![Sample Campaign GPT](/static/images/campaign-gpt-1.png)
 
-3. Assign an appropriate name and save your Campaign GPT by clicking the *Save* button. Then, select the *three dots* and choose `process Campaign GPT` to execute it.
+3. Assign an appropriate name and save your Campaign GPT by clicking the _Save_ button. Then, select the _three dots_ and choose `process Campaign GPT` to execute it.

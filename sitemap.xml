@@ -6,7 +6,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/</loc>
+    <loc>https://docs.kursaha.com/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.85</priority>
   </url>
@@ -16,7 +16,7 @@
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/connector/</loc>
+    <loc>https://docs.kursaha.com/connector/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.64</priority>
   </url>
@@ -26,27 +26,27 @@
     <priority>0.57</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/segment/</loc>
+    <loc>https://docs.kursaha.com/segment/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.57</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/journey/</loc>
+    <loc>https://docs.kursaha.com/journey/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.56</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/email/</loc>
+    <loc>https://docs.kursaha.com/mailkeets/email/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.56</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/campaign/</loc>
+    <loc>https://docs.kursaha.com/campaign/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.55</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/template/</loc>
+    <loc>https://docs.kursaha.com/template/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.55</priority>
   </url>
@@ -71,17 +71,17 @@
     <priority>0.51</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/connector/source/</loc>
+    <loc>https://docs.kursaha.com/connector/source/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/cohort/</loc>
+    <loc>https://docs.kursaha.com/cohort/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/segment/databasequery/</loc>
+    <loc>https://docs.kursaha.com/segment/databasequery/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.49</priority>
   </url>
@@ -96,17 +96,17 @@
     <priority>0.49</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/segment/campaigngpt/</loc>
+    <loc>https://docs.kursaha.com/segment/campaigngpt/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.48</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/chat-automation/</loc>
+    <loc>https://docs.kursaha.com/chat-automation/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.48</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/developer/eddsdk/</loc>
+    <loc>https://docs.kursaha.com/developer/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.48</priority>
   </url>
@@ -116,7 +116,7 @@
     <priority>0.48</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/connector/destination/</loc>
+    <loc>https://docs.kursaha.com/connector/destination/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.45</priority>
   </url>
@@ -131,7 +131,7 @@
     <priority>0.45</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/cohort/customer/</loc>
+    <loc>https://docs.kursaha.com/cohort/customer/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.43</priority>
   </url>
@@ -141,7 +141,7 @@
     <priority>0.42</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/connector/source/mysql/</loc>
+    <loc>https://docs.kursaha.com/connector/source/mysql/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.41</priority>
   </url>
@@ -151,32 +151,32 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/connector/source/snowflake/</loc>
+    <loc>https://docs.kursaha.com/connector/source/snowflake/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/connector/source/googlesheet/</loc>
+    <loc>https://docs.kursaha.com/connector/source/googlesheet/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/connector/source/bigquery/</loc>
+    <loc>https://docs.kursaha.com/connector/source/bigquery/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/email/security/dkim/</loc>
+    <loc>https://docs.kursaha.com/mailkeets/email/security/dkim/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/email/security/spf/</loc>
+    <loc>https://docs.kursaha.com/mailkeets/email/security/spf/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/email/security/dmarc/</loc>
+    <loc>https://docs.kursaha.com/mailkeets/email/security/dmarc/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.39</priority>
   </url>
@@ -196,12 +196,12 @@
     <priority>0.38</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/connector/destination/facebookads/</loc>
+    <loc>https://docs.kursaha.com/connector/destination/facebookads/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.38</priority>
   </url>
   <url>
-    <loc>https://docs.kursaha.com/engagedatadrive/connector/destination/metapixel/</loc>
+    <loc>https://docs.kursaha.com/connector/destination/metapixel/</loc>
     <lastmod>2024-05-14T09:13:30Z</lastmod>
     <priority>0.38</priority>
   </url>
