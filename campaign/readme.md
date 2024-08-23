@@ -6,7 +6,7 @@ label: Campaign
 
 # Campaign
 
-**campaign** is a coordinated set of marketing activities designed to achieve specific goals, such as driving engagement, increasing conversions, or promoting a new product. Campaigns are structured around targeted messaging and interactions that are delivered across various channels to effectively reach and influence your audience. By leveraging Kursaha’s advanced features, you can create, manage, and optimize these campaigns to ensure they meet your business objectives.
+**Campaigns** are coordinated set of marketing activities designed to achieve specific goals, such as driving engagement, increasing conversions, or promoting a new product. Campaigns are structured around targeted messaging and interactions that are delivered across various channels to effectively reach and influence your audience. By leveraging Kursaha’s advanced features, you can create, manage, and optimize these campaigns to ensure they meet your business objectives.
 
 ## How Campaigns Can Help You
 
