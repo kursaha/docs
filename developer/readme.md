@@ -204,7 +204,7 @@ Here's a breakdown of the fields within the events:
 
 1. **customerId**: A distinctive user identifier for precise targeting.
 2. **signals**: Batch multiple signals in a single API call.
-3. **eventType**: Specify the [**event type**](../engageDataDrive/cohort/#utilizing-cohort-events) corresponding to a specific user action.
+3. **eventType**: Specify the [**event type**](../cohort/readme.md/#utilizing-cohort-events) corresponding to a specific user action.
 4. **data**: User data associated with the particular event, including attributes price, brand, productId, category, subCategory1, subCategory2, subCategory3 etc.
 
 Leverage this seamless integration to transmit crucial user behavior data to Kursaha, enhancing your customer engagement and acquisition strategies. Connect with your audience like never before!

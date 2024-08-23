@@ -3,6 +3,7 @@ order: 100
 icon: key
 tags: [settings, configuration]
 ---
+
 # API Key
 
 ## How to Generate and Use a API Key
@@ -18,13 +19,10 @@ This guide explains how to generate a Kursaha API key and how to use it for auth
 3. Enter a key name for identification purposes.
 4. Click on the "Save" button to generate the API key.
 
-
-
 Once you have successfully generated a API key, make sure to store it securely. Please note that for security reasons, Kursaha does not store the API key on its server.
-
 
 ##### Using the API Key
 
-The Kursaha API key is a secret key that you can use for authentication purposes when interacting with Kursaha through the API. You can use our [MailSdk](../developer/MailSdk.md) or [EddSdk](../developer/EddSdk.md) to integrate it into your application.
+The Kursaha API key is a secret key that you can use for authentication purposes when interacting with Kursaha through the API. You can use our [MailSdk](../developer/MailSdk.md) or [EddSdk](../developer/readme.md) to integrate it into your application.
 
 **Keep in mind that the Kursaha API key should be treated as a sensitive information and should not be shared with anyone who doesn't need access to it.**
