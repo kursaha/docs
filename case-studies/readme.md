@@ -1,5 +1,5 @@
 ---
-order: 94
+order: 88
 icon: log
 tags: [engage-data-drive, case-studies, campaignGPT]
 ---

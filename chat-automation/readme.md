@@ -1,13 +1,14 @@
 ---
 order: 94
 icon: discussion-closed
-tags: [chat automation, engage data drive]
+label : Chat Automation
 ---
 
 # Chat Automation
+
 Chat automation refers to the use of automated systems, often powered by artificial intelligence (AI) or scripted algorithms, to handle and respond to user inquiries or engage in conversations. This technology is commonly employed in chatbots, virtual assistants, or automated messaging systems. Chat automation aims to streamline communication processes, providing quick and efficient responses to user queries, managing routine tasks, and enhancing user experiences.
 
- In Kursaha, we provide the chat automation which is designed to interpret and generate human-like responses, making them valuable for customer support, lead generation, and various interactive applications. The goal is to enhance efficiency, reduce response times, and provide 24/7 availability for user interactions.
+In Kursaha, we provide the chat automation which is designed to interpret and generate human-like responses, making them valuable for customer support, lead generation, and various interactive applications. The goal is to enhance efficiency, reduce response times, and provide 24/7 availability for user interactions.
 
 ### Utilizing Chat Automation Feature:
 

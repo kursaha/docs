@@ -1,5 +1,5 @@
 ---
-order: 96
+order: 89
 icon: gear
 tags: [settings, kursaha]
 ---

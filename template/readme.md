@@ -1,7 +1,7 @@
 ---
 order: 98
 icon: log
-tags: [template, engage data drive]
+label: Template
 ---
 
 ## How to Create a Mail or Message Template
@@ -49,7 +49,6 @@ Kursaha Tech.
 ```
 
 By using proper placeholders, you can create dynamic templates that can be filled with data for multiple users.
-
 
 #### Sample with Array Value
 
