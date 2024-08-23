@@ -1,5 +1,5 @@
 ---
-order: 92
+order: 100
 label: Email
 icon: mail
 ---

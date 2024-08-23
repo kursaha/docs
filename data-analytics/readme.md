@@ -1,7 +1,7 @@
 ---
 order: 93
 label: Data Analytics
-icon: pulse
+icon: project-roadmap
 tags: [Data Analytics, engage data drive]
 ---
 

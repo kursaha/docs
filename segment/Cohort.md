@@ -1,6 +1,6 @@
 ---
 order: 97
-icon: cache
+icon: people
 tags: [Cohort, segment, engage data drive]
 ---
 
