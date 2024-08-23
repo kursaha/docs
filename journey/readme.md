@@ -4,9 +4,9 @@ icon: pulse
 label: Journey
 ---
 
-# Journey
+# User Journey
 
-Journey is a dynamic feature within the Kursaha platform designed to transform how you manage and optimize customer journeys. By leveraging Journey, you can visualize, automate, and enhance the entire path your customers take from initial interaction to conversion and beyond. It’s a powerful tool for creating seamless, personalized experiences that drive engagement and boost retention.
+User Journey is a dynamic feature within the Kursaha platform designed to transform how you manage and optimize customer journeys. By leveraging Journey, you can visualize, automate, and enhance the entire path your customers take from initial interaction to conversion and beyond. It’s a powerful tool for creating seamless, personalized experiences that drive engagement and boost retention.
 
 ## How Journey Can Help You
 
