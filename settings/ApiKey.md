@@ -1,7 +1,7 @@
 ---
 order: 100
 icon: key
-tags: [settings, configuration]
+label: API Key
 ---
 
 # API Key
