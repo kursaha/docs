@@ -1,7 +1,7 @@
 ---
 order: 99
 icon: hubot
-tags: [campaign gpt, segment, engage data drive]
+label: Campaign GPT
 ---
 
 # Campaign GPT
