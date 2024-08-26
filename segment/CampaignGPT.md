@@ -1,5 +1,5 @@
 ---
-order: 97
+order: 99
 icon: hubot
 tags: [campaign gpt, segment, engage data drive]
 ---
