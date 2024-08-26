@@ -1,11 +1,10 @@
 ---
 order: 95
 icon: people
-tags: [cohort, engage data drive]
 label: Cohort
 ---
 
-# Cohort: Streamline Targeted Engagement with Cohorting
+# Cohort
 
 Cohorting is a strategic approach that clusters individuals based on shared attributes or behaviors, allowing for focused analysis and personalized interactions. At Kursaha, we empower you to categorize users exhibiting similar behaviors into cohorts. This encompasses actions like product views, cart additions, and purchases. Additionally, you can tailor cohorts for users who exhibit specific behaviors, such as downloading an app without completing a subscription or sign-up.
 
