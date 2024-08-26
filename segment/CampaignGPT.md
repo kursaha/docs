@@ -10,9 +10,8 @@ Campaign GPT is an advanced AI system designed to identify and target users with
 
 # How to use Campaign GPT
 
+[!embed el="iframe" text="Campaign GPT"](/static/videos/Campaign_gpt_segment_tour.mp4)
+
 1. Access Campaign GPT by navigating to the 'Segment' section and selecting 'Create New Segment,' then choose 'Campaign GPT.'
-2. Specify the required fields. For instance, if you aim to target customers engaged with the brand `Something` in the category `electronics`, sub-category `smartphone`, and products priced around `1000`, your page should resemble the provided image.
-
-![Sample Campaign GPT](/static/images/campaign-gpt-1.png)
-
+2. Specify the required fields. For instance, if you aim to target customers engaged with the brand `Something` in the category `electronics`, sub-category `smartphone`, and products priced around `1000`.
 3. Assign an appropriate name and save your Campaign GPT by clicking the _Save_ button. Then, select the _three dots_ and choose `process Campaign GPT` to execute it.
