@@ -23,35 +23,21 @@ Cohort Events represent specific user actions, providing a granular view of indi
 
 ### Steps to Leverage Cohort Functionality
 
-1. To harness the **power of Cohorts**, utilize our API to seamlessly transmit [**user event data**](/developer/readme.md/#sending-events-to-kursaha-seamlessly-integrate-user-data) to our system. Please give Customer id same as [this](/developer/readme.md/#sending-customer-data-to-kursaha).
+[!embed el="iframe" text="Cohort"](/static/videos/Cohort_tour.mp4)
+
+1. To harness the _power of Cohorts_, utilize our API to seamlessly transmit [**user event data**](/developer/readme.md/#sending-events-to-kursaha-seamlessly-integrate-user-data) to our system. Please give Customer id same as [this](/developer/readme.md/#sending-customer-data-to-kursaha).
 2. Navigate to the Cohort section and select the _create new cohort_ tab.
 3. Apply filters to user activity based on specific criteria, encompassing various actions discussed earlier.
-
-![Select User Action](/static/images/create-cohort-1.png)
-
-4. Advanced searches can be conducted using the "where" field. Add rules to include conditions.
-
-For instance, to identify users who made a purchase activity of a product from the brand "something", priced higher than 1000, the cohort configuration will look like this.
-
-![Sample Cohort](/static/images/create-cohort-2.png)
-
+4. Advanced searches can be conducted using the "where" field. Add rules to include conditions. Example, to identify users who made a purchase activity of a product from the brand "something", priced higher than 1000.
 5. You can further filter users based on event count and event date.
-
-For example, if you're looking to pinpoint users who have made multiple purchases (a purchase activity) of a product from the brand "something", priced over 1000, and completed the purchase more than once, all after the date 22/03/2023, your cohort configuration will resemble this.
-
-![Example Cohort](/static/images/create-cohort-3.png)
-
-6.  After applying the necessary filters, validate selected users by clicking the _Run_ button.
-7.  Provide an appropriate name and save the cohort by clicking the _Save_ button.
+6. After applying the necessary filters, validate selected users by clicking the _Run_ button.
+7. Provide an appropriate name and save the cohort by clicking the _Save_ button.
 
 ### Sync Job: Seamless Data Transmission
 
+[!embed el="iframe" text="Cohort Sync"](/static/videos/Cohort_sync.mp4)
+
 After creating a cohort, transmit user data to your designated data destination.
-
 For instance, to synchronize data with Facebook Ads, click the _Sync_ button for the specific cohort. Choose the destination ID, sync frequency, and save your configuration.
-
-![Sync Option](/static/images/create-sync-1.png)
-
-![Create Sync](/static/images/create-sync-2.png)
 
 Note: If a sync job is already active for a specific cohort and data destination, you cannot initiate a new sync job with the same configuration (i.e., identical cohort and data destination). Instead you can update the frequency or create the sync and create a new one.
