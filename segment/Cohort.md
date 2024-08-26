@@ -14,6 +14,8 @@ Cohort segmentation involves grouping customers who share a common trait or expe
 
 ## **Using Cohort Segmentation**
 
+[!embed el="iframe" text="Campaign GPT"](/static/videos/Cohort_segment_tour.mp4)
+
 1. Create a cohort, [see demo here]()
 2. Add cohort in Segement -> Create New -> Cohort.
 3. Name cohort segment and select the cohort you want to use, and save.
