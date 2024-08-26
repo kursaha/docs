@@ -8,6 +8,8 @@ The **Text-to-Speech (TTS)** feature in Kursaha is designed to convert written t
 
 ## How It Works
 
+[!embed el="iframe" text="Text To Speech"](/static/videos/Text_to_speech_tour.mp4)
+
 ### 1. **Name for Template**
 
 When creating a template, selecting a clear and descriptive name is essential for distinguishing it and ensuring easy access.
@@ -21,9 +23,8 @@ When creating a template, selecting a clear and descriptive name is essential fo
 
 ### 3. **Wrapper Template Integration**
 
-- **Create a Wrapper Template**: Develop a template that defines the context and structure for your text-to-speech messages. This wrapper ensures that your audio messages are delivered in a consistent and professional format.
-- **Embed TTS in WhatsApp**: Integrate the text-to-speech functionality within WhatsApp communications. When users receive a message, they will see an option to listen to the message as an audio file rather than reading the text.
-- **Audio Conversion**: The text included in the wrapper template will be automatically converted into audio in the selected language. This conversion ensures that messages are accessible to users who prefer or require auditory content.
+- Kursaha only use Whatsapp to send audio messages.Please create Whatsapp template {See demo here}, and then use as a wrapper template in Text To Speech template
+- For calls with this message, no wrapper ID selection is necessary; direct calling through the channel is available.
 
 ## Benefits of Text-to-Speech
 
@@ -51,12 +52,3 @@ When creating a template, selecting a clear and descriptive name is essential fo
 - **Time Savings**: Automate the conversion of text to speech, reducing the need for manual audio recording and editing.
 
 The Text-to-Speech feature in Kursaha provides a versatile and effective way to enhance your messaging strategy. By utilizing multiple language options and integrating TTS within WhatsApp using wrapper templates, you can deliver engaging and accessible audio content to a diverse audience, fostering better communication and connection.
-
-## Creating a Text-to-Speech Template:
-
-1. Navigate to Templates -> Create New Template -> Text To Speech.
-
-2. During template creation, ensure you:
-   - Provide a meaningful name.
-   - Input the text message for audio conversion, supporting dynamic placeholders for personalized content and accommodating multiple messages in different languages.
-   - Choose a wrapper ID, currently only supported in WhatsApp. For calls with this message, no wrapper ID selection is necessary; direct calling through the channel is available.
