@@ -8,7 +8,7 @@ The **Text-to-Speech (TTS)** feature in Kursaha is designed to convert written t
 
 ## How It Works
 
-[!embed el="iframe" text="Text To Speech"](/static/videos/Text_to_speech_tour.mp4)
+[!embed el="iframe" text="Text To Speech"](../static/videos/Text_to_speech_tour.mp4)
 
 ### 1. **Name for Template**
 
