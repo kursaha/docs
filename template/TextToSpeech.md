@@ -23,7 +23,7 @@ When creating a template, selecting a clear and descriptive name is essential fo
 
 ### 3. **Wrapper Template Integration**
 
-- Kursaha only use Whatsapp to send audio messages.Please create Whatsapp template {See demo here}, and then use as a wrapper template in Text To Speech template
+- Kursaha only use Whatsapp to send audio messages.Please create Whatsapp template [see demo here](./Whatsapp.md/#creating-and-managing-whatsapp-templates), and then use as a wrapper template in Text To Speech template
 - For calls with this message, no wrapper ID selection is necessary; direct calling through the channel is available.
 
 ## Benefits of Text-to-Speech
