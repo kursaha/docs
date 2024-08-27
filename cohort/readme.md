@@ -12,7 +12,7 @@ Cohorting is a strategic approach that clusters individuals based on shared attr
 
 [!embed el="iframe" text="Cohort"](/static/videos/Cohort_tour.mp4)
 
-1. To harness the _power of Cohorts_, utilize our API to seamlessly transmit [**user event data**](/developer/readme.md/#sending-events-to-kursaha-seamlessly-integrate-user-data) to our system. Please give Customer id same as [this](/developer/readme.md/#sending-customer-data-to-kursaha).
+1. To harness the _power of Cohorts_, utilize our API to seamlessly transmit [**user event data**](../developer/readme.md/#sending-events) to our system. Please give Customer id same as [this](../developer/readme.md/#sending-customer-data).
 2. Navigate to the Cohort section and select the _create new cohort_ tab.
 3. Apply filters to user activity based on specific criteria, encompassing various actions discussed earlier.
 4. Advanced searches can be conducted using the "where" field. Add rules to include conditions. Example, to identify users who made a purchase activity of a product from the brand "something", priced higher than 1000.

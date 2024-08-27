@@ -12,7 +12,7 @@ It is essential not to set the customer ID as "None" for multiple users, as it w
 
 ### Details of User Specific Fields :
 
-Customer information parameters consist of user identifiers shared with event data, enabling better user behavior analysis and personalized experiences. Please try to provide maximum information of a customer for better results. Use this [Api Endpoint](/developer/readme.md/#sending-customer-data-to-kursaha) for sending customer data. These are all the available fields for a particular customer.
+Customer information parameters consist of user identifiers shared with event data, enabling better user behavior analysis and personalized experiences. Please try to provide maximum information of a customer for better results. Use this [Api Endpoint](../developer/readme.md/#sending-customer-data) for sending customer data. These are all the available fields for a particular customer.
 
 | Fields    | Description { class="compact" }                                                                                                                                                                                                                                                                   |
 | :-------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
