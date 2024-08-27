@@ -23,6 +23,6 @@ Once you have successfully generated a API key, make sure to store it securely. 
 
 ##### Using the API Key
 
-The Kursaha API key is a secret key that you can use for authentication purposes when interacting with Kursaha through the API. You can use our [MailSdk](../developer/MailSdk.md) or [EddSdk](../developer/readme.md) to integrate it into your application.
+The Kursaha API key is a secret key that you can use for authentication purposes when interacting with Kursaha through the API. You can use our [MailSdk](../mailkeets/MailSdk.md) or [EddSdk](../developer/readme.md) to integrate it into your application.
 
 **Keep in mind that the Kursaha API key should be treated as a sensitive information and should not be shared with anyone who doesn't need access to it.**
