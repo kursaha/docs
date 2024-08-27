@@ -1,10 +1,8 @@
 ---
 order: 2
 icon: gear
-tags: [mailkeets, configuration]
+label: Sender Domain
 ---
-
-# Sender Domain
 
 ### Mailkeets Dashboard
 

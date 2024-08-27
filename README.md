@@ -11,6 +11,10 @@ Get 20% more growth with customers with Kursaha's Customer Engagement Platform.
 
 **Kursaha** is your ultimate marketing co-pilot, designed to empower businesses through connected experiences. Our platform is packed with essential integrations and AI-driven tools to help you acquire and engage with customers more effectively. From real-time analytics to behavioral cohorting, Kursaha offers a comprehensive suite of features tailored for marketing, data, and product teams.
 
+!!!info
+For developers, we have [this section](./developer/readme.md) dedicated to advanced features, integrations, and customization options.
+!!!
+
 #### Our Mission
 
 We aim to revolutionize customer engagement and acquisition by providing businesses with the tools they need to deliver personalized, data-driven marketing strategies. Our solutions are designed to enhance user experiences, optimize campaigns, and drive growth.

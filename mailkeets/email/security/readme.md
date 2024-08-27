@@ -1,16 +1,14 @@
 ---
 order: 99
 icon: verified
-tags: [email, security]
+label: Email Security
 ---
-
-# Email Security
 
 !!!
 90%+ of all cyber attacks involve fake email.
 !!!
 
-The word **Email Security** refers to various processes and strategies for defending email accounts, information, and communications from unwanted access, theft, or compromise. 
+The word **Email Security** refers to various processes and strategies for defending email accounts, information, and communications from unwanted access, theft, or compromise.
 
 ## Types of Email Attacks
 
@@ -24,16 +22,15 @@ Phishing comes in several forms, such as spear phishing, regular phishing, and w
 
 ### Spoofing
 
-Spoofing is a dangerous email threat because it involves fooling the recipient into thinking the email is coming from someone other than the apparent sender. This makes spoofing an effective business email compromise (BEC) tool. The email platform cannot tell a faked email from a real one because it merely reads the metadata—the same data the attacker has changed. 
+Spoofing is a dangerous email threat because it involves fooling the recipient into thinking the email is coming from someone other than the apparent sender. This makes spoofing an effective business email compromise (BEC) tool. The email platform cannot tell a faked email from a real one because it merely reads the metadata—the same data the attacker has changed.
 
 This makes the impersonation of a person the victim either knows or respects relatively easy for an attacker.
-
 
 ## Email security best practices
 
 Some of the important email security practices for the end users
 
-- [x] Use a strong email password 
+- [x] Use a strong email password
 - [x] Use two-factor authentication
 - [x] Monitor your email habits
 - [x] Look out for _Phishing Emails_
@@ -43,7 +40,6 @@ Some of the important email security practices for the end users
 - [x] Be careful with the devices you use
 - [x] Avoid giving your email address away
 - [x] Log out of your email account when you’re finished
-
 
 ## Security practices for mail servers
 

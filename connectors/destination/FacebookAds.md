@@ -1,10 +1,8 @@
 ---
 order: 99
 icon: dot
-tags: [queries, engage data drive]
+label: Facebook Ads
 ---
-
-# Facebook Ads
 
 This integration empowers you to craft tailored audiences using your behavioral data, fostering fresh user acquisition and heightened conversions. Seamlessly, you can upload and synchronize behavioral cohorts to Facebook, strategically leveraging them for precise campaign targeting across the expansive Facebook ad network.
 

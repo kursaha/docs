@@ -1,10 +1,8 @@
 ---
 order: 97
 icon: dot
-tags: [data source, engage data drive]
+label: Big Query
 ---
-
-# BigQuery
 
 This page contains the setup guide and reference information for the Big Query source connector.
 
