@@ -1,7 +1,5 @@
 ---
 order: 90
 icon: gear
-tags: [settings, kursaha]
+label: Settings
 ---
-
-# Settings

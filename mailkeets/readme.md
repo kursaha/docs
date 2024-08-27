@@ -1,10 +1,8 @@
 ---
 order: 89
 icon: mail
-tags: [email, mailkeets]
+label: Mailkeets
 ---
-
-# Mailkeets
 
 !!!
 Grow your Business with Email Automation

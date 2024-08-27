@@ -1,7 +1,7 @@
 ---
 order: 100
 icon: mail
-tags: [mailkeets, configuration]
+label: Mailkeets
 ---
 
 # Mailkeets

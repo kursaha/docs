@@ -1,12 +1,11 @@
 ---
 order: 2
 icon: gear
-tags: [mailkeets, configuration]
+label: Sender Domain
 ---
 
-# Sender Domain
-
 [!embed el="iframe" text="Sender Domain"](/static/videos/Sender_domain_tour.mp4)
+
 
 1. Go to Mailkeets [Dashboard](https://kursaha.com/mailkeets)
 2. Add a **Domain name** and ensure you have access to manage dns for the same.

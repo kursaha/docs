@@ -1,10 +1,8 @@
 ---
 order: 91
 icon: code
-tags: [email, mailkeets]
+label: Developers
 ---
-
-# Developers
 
 !!!info :bulb: SDK
 SDK stands for **Software Development Kit**, which provides a set of libraries and tools that you can integrate into your application.

@@ -1,10 +1,8 @@
 ---
 order: 100
 icon: person-fill
-tags: [customer, campaign, engage data drive]
+label: Customer
 ---
-
-# Customer
 
 Customer data typically refers to the information related to individual customers or users that is collected and used for tracking their interactions and activities within a system or application. This data is crucial for various purposes, including analytics, personalization, and understanding user behavior. It may include details relevant information that helps in monitoring and analyzing user engagement.
 
