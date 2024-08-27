@@ -1,10 +1,8 @@
 ---
 order: 96
 icon: dot
-tags: [data source, engage data drive]
+label: Google Sheet
 ---
-
-# Google Sheet
 
 This page contains the setup guide and reference information for the Google Sheets source connector.
 

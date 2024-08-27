@@ -1,11 +1,9 @@
 ---
 order: 88
 icon: log
-tags: [engage-data-drive, case-studies, campaignGPT]
 ---
 
 # Explore Our Case Studies
-
 
 Explore how Kursaha has helped various companies achieve their marketing goals through real-world examples of our features in action.
 Thank you for choosing Kursaha. We look forward to helping you transform your customer engagement and acquisition strategies!

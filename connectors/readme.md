@@ -1,10 +1,8 @@
 ---
 order: 96
 icon: database
-tags: [data source, engage data drive]
+label: Connectors
 ---
-
-# Connectors
 
 First of all, you have to create a Connector. Connectors are of 2 types:
 
