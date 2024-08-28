@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.778056038479">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.778140633416">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../static/favicon.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.5.0.778056038479" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.5.0.778140633416" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.778056038479" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.778140633416" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.778056038479" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.778140633416" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -268,6 +268,46 @@
     </h1>
 </doc-anchor-target>
 <p>Cohorting is a strategic approach that clusters individuals based on shared attributes or behaviors, allowing for focused analysis and personalized interactions. At Kursaha, we empower you to categorize users exhibiting similar behaviors into cohorts. This encompasses actions like product views, cart additions, and purchases. Additionally, you can tailor cohorts for users who exhibit specific behaviors, such as downloading an app without completing a subscription or sign-up.</p>
+<doc-anchor-target id="steps-to-leverage-cohort-functionality">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#steps-to-leverage-cohort-functionality">#</doc-anchor-trigger>
+        <span>Steps to Leverage Cohort Functionality</span>
+    </h3>
+</doc-anchor-target>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="../static/videos/cohort_tour.mp4" allowfullscreen></iframe>
+    </div>
+    <figcaption class="caption">Cohort</figcaption>
+</figure>
+</p>
+<ol>
+<li>To harness the <em>power of Cohorts</em>, utilize our API to seamlessly transmit <a href="../developer/#sending-events"><strong>user event data</strong></a> to our system. Please give Customer id same as <a href="../developer/#sending-customer-data">this</a>.</li>
+<li>Navigate to the Cohort section and select the <em>create new cohort</em> tab.</li>
+<li>Apply filters to user activity based on specific criteria, encompassing various actions discussed earlier.</li>
+<li>Advanced searches can be conducted using the &quot;where&quot; field. Add rules to include conditions. Example, to identify users who made a purchase activity of a product from the brand &quot;something&quot;, priced higher than 1000.</li>
+<li>You can further filter users based on event count and event date.</li>
+<li>After applying the necessary filters, validate selected users by clicking the <em>Run</em> button.</li>
+<li>Provide an appropriate name and save the cohort by clicking the <em>Save</em> button.</li>
+</ol>
+<doc-anchor-target id="sync-job-seamless-data-transmission">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sync-job-seamless-data-transmission">#</doc-anchor-trigger>
+        <span>Sync Job: Seamless Data Transmission</span>
+    </h3>
+</doc-anchor-target>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="../static/videos/cohort_sync.mp4" allowfullscreen></iframe>
+    </div>
+    <figcaption class="caption">Cohort Sync</figcaption>
+</figure>
+</p>
+<p>After creating a cohort, transmit user data to your designated data destination.
+For instance, to synchronize data with Facebook Ads, click the <em>Sync</em> button for the specific cohort. Choose the destination ID, sync frequency, and save your configuration.</p>
+<p>Note: If a sync job is already active for a specific cohort and data destination, you cannot initiate a new sync job with the same configuration (i.e., identical cohort and data destination). Instead you can update the frequency or create the sync and create a new one.</p>
 <doc-anchor-target id="utilizing-cohort-events">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#utilizing-cohort-events">#</doc-anchor-trigger>
@@ -313,46 +353,7 @@
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="steps-to-leverage-cohort-functionality">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#steps-to-leverage-cohort-functionality">#</doc-anchor-trigger>
-        <span>Steps to Leverage Cohort Functionality</span>
-    </h3>
-</doc-anchor-target>
-<p>
-<figure>
-    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
-        <iframe class="w-full h-full border-0 absolute inset-0" src="../static/videos/cohort_tour.mp4" allowfullscreen></iframe>
-    </div>
-    <figcaption class="caption">Cohort</figcaption>
-</figure>
-</p>
-<ol>
-<li>To harness the <em>power of Cohorts</em>, utilize our API to seamlessly transmit <a href="../developer/#sending-events-to-kursaha-seamlessly-integrate-user-data"><strong>user event data</strong></a> to our system. Please give Customer id same as <a href="../developer/#sending-customer-data-to-kursaha">this</a>.</li>
-<li>Navigate to the Cohort section and select the <em>create new cohort</em> tab.</li>
-<li>Apply filters to user activity based on specific criteria, encompassing various actions discussed earlier.</li>
-<li>Advanced searches can be conducted using the &quot;where&quot; field. Add rules to include conditions. Example, to identify users who made a purchase activity of a product from the brand &quot;something&quot;, priced higher than 1000.</li>
-<li>You can further filter users based on event count and event date.</li>
-<li>After applying the necessary filters, validate selected users by clicking the <em>Run</em> button.</li>
-<li>Provide an appropriate name and save the cohort by clicking the <em>Save</em> button.</li>
-</ol>
-<doc-anchor-target id="sync-job-seamless-data-transmission">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sync-job-seamless-data-transmission">#</doc-anchor-trigger>
-        <span>Sync Job: Seamless Data Transmission</span>
-    </h3>
-</doc-anchor-target>
-<p>
-<figure>
-    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
-        <iframe class="w-full h-full border-0 absolute inset-0" src="../static/videos/cohort_sync.mp4" allowfullscreen></iframe>
-    </div>
-    <figcaption class="caption">Cohort Sync</figcaption>
-</figure>
-</p>
-<p>After creating a cohort, transmit user data to your designated data destination.
-For instance, to synchronize data with Facebook Ads, click the <em>Sync</em> button for the specific cohort. Choose the destination ID, sync frequency, and save your configuration.</p>
-<p>Note: If a sync job is already active for a specific cohort and data destination, you cannot initiate a new sync job with the same configuration (i.e., identical cohort and data destination). Instead you can update the frequency or create the sync and create a new one.</p>
+<p>To use customer data as event. <a href="customer/">Refer here</a></p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -381,7 +382,7 @@ For instance, to synchronize data with Facebook Ads, click the <em>Sync</em> but
                                         <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../cohort/customer/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Customer</span>
+                                                <span class="block mt-1">Event data format</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
