@@ -4,78 +4,85 @@ icon: code
 label: Developers
 ---
 
+# Kursaha SDK Integration Guide
+
+The Kursaha SDK provides libraries and tools to integrate with your application. Here’s how you can use the SDK with different programming languages and APIs to connect seamlessly to your system.
+
 !!!info :bulb: SDK
 SDK stands for **Software Development Kit**, which provides a set of libraries and tools that you can integrate into your application.
 !!!
 
-These documentation provides how you can use Kursaha sdk's to seamlessly connect to your system.
+## Prerequisites
+
+To use the SDK, you need an API Key. If you don't have one, please refer to [this page](../settings/ApiKey.md) for instructions on generating your API Key.
+
+## SDK Integration
 
 +++ Java
 
-```
-// build.gradle
+Add the Kursaha SDK to your `build.gradle` file:
+
+```gradle
 dependencies {
     ...
-    // https://mavenlibs.com/maven/dependency/com.kursaha/java-sdk
     implementation 'com.kursaha:java-sdk:0.0.16'
 }
-
 ```
 
-+++ NodeJs
+Initialize the client:
 
+```java
+/**
+ * Create a unique API key from <a href="https://kursaha.com/engage-data-drive/settings/api-key">API Key</a>.
+ * Add that API key to your system environment.
+ */
+private final String apiKey = System.getenv("KURSAHA_KEY"); // Environment variable name
+private final KursahaClient kursahaClient;
 ```
-  // package.json
-  "dependencies": {
+
++++ Node.js
+
+Add Kursaha SDK to your `package.json` file:
+
+```json
+"dependencies": {
     ...
-    "kursaha-sdk": "^1.0.8",
-  }
+    "kursaha-sdk": "^1.0.8"
+}
 ```
 
 +++ GoLang
 
-```go
+Install the Kursaha SDK:
+
+```bash
 go get github.com/kursaha/go-sdk
 ```
 
-+++ Rest API
-Add these headers
-
-1. **Content-Type** : You must set the content-type header to 'application/json'. Key-pair will look like Content-Type: application/json.
-2. **Authorization** : You must set the Authorization header to 'Bearer Your-Api-Key'. Key-pair will look like Authorization: Bearer Your-Api-Key.
-   +++
-
-Before proceeding with further illustration, it is mandatory to have an API Key for using the SDK. If you don't have a Mailkeets API Key, please refer to [this page](../settings/ApiKey.md) for instructions on how to generate one.
-
-## Methods
-
-Initialize client as below
-
-+++ Java
-
-```java
-    /**
-     * Create a unique api key from <a href="https://kursaha.com/engage-data-drive/settings/api-key">API Key</a>.
-     * After that, please add that api key into system environment.
-     */
-    private final String apiKey = System.getenv("KURSAHA_KEY"); // Name of the Environment variable
-    private final KursahaClient kursahaClient;
-```
-
-+++ GoLang
+Initialize the client:
 
 ```go
 kursahaClient := kursaha.NewKursaha("<YOUR-API-KEY>")
 ```
 
++++ REST API
+
+To interact with the REST API, include the following headers in your requests:
+
+1. **Content-Type**: `application/json`
+2. **Authorization**: `Bearer Your-Api-Key`
+
 +++
+
+## Methods
 
 ### Signal Start Event
 
 +++ Java
+
 :::code source="../static/code/signalStartEvent.java" range="21-29" :::
 
-+++ Golang
++++ GoLang
 
 ```go
 signal := edd.Signal{
@@ -88,11 +95,11 @@ err := client.Edd.SendSignal([]edd.Signal{})
 if err != nil {
     print(err.Error())
 } else {
-    print("successfully send signal!")
+    print("successfully sent signal!")
 }
 ```
 
-+++ Curl
++++ cURL
 
 ```bash
 curl --location 'https://edd.kursaha.com/api/event-flows/signal' \
@@ -104,9 +111,7 @@ curl --location 'https://edd.kursaha.com/api/event-flows/signal' \
         {
             "emitterId": "UUID",
             "stepNodeId": "step_node_id",
-            "data": {
-
-            },
+            "data": {},
             "eventflowIdentifier": "event_flow_id"
         }
     ]
@@ -115,24 +120,24 @@ curl --location 'https://edd.kursaha.com/api/event-flows/signal' \
 
 +++
 
-The description for each fields in the signal are as below:
+**Field Descriptions:**
 
-1. requestIdentifier: Unique UUID to trage the request
-2. signals: Multiple signals can batch in one API call
-3. emitterId: Unique emitter ID, should be unique across the journey of the workflow
-4. stepNodeId: Step node id
-5. data: user data for the specific event
-6. eventflowIdentifier: Event flow identifier
+1. `requestIdentifier`: Unique UUID to track the request.
+2. `signals`: List of signals to send in one API call.
+3. `emitterId`: Unique ID for the emitter.
+4. `stepNodeId`: Step node ID.
+5. `data`: User data for the specific event.
+6. `eventflowIdentifier`: Identifier for the event flow.
 
-### Sending Customer data to Kursaha
+### Sending Customer Data
 
-Send your unique customer data to our API using the following endpoint:
+Send customer data using the following endpoint:
 
 ```bash
-  POST https://edd.kursaha.com/api/customers
+POST https://edd.kursaha.com/api/customers
 ```
 
-+++ Curl
++++ cURL
 
 ```bash
 curl --location 'https://edd.kursaha.com/api/customers' \
@@ -146,7 +151,7 @@ curl --location 'https://edd.kursaha.com/api/customers' \
         "firstName": "John",
         "lastName": "Doe",
         "gender": "",
-        "dob":"",
+        "dob": "",
         "city": "",
         "state": "",
         "country": "",
@@ -156,18 +161,19 @@ curl --location 'https://edd.kursaha.com/api/customers' \
 ```
 
 +++ Java
+
 :::code source="../static/code/signalStartEvent.java" range="33-41" :::
 +++
 
-### Sending Events to Kursaha: Seamlessly Integrate User Data
+### Sending Events
 
-Effortlessly send multiple events to our API using the following endpoint:
+Send events to Kursaha using the following endpoint:
 
 ```bash
-  POST https://edd.kursaha.com/api/event-flows/signal
+POST https://edd.kursaha.com/api/event-flows/signal
 ```
 
-+++ Curl
++++ cURL
 
 ```bash
 curl --location 'https://edd.kursaha.com/api/event-flows/signal' \
@@ -179,13 +185,13 @@ curl --location 'https://edd.kursaha.com/api/event-flows/signal' \
             "customerId": "<Unique-customer-id>",
             "eventType": "<event-type>",
             "data": {
-                "price" : 200,
-                "brand" : "something",
+                "price": 200,
+                "brand": "something",
                 "productId": "",
-                "category" : "",
-                "subCategory1" : "",
-                "subCategory2" : "",
-                "subCategory3" : ""
+                "category": "",
+                "subCategory1": "",
+                "subCategory2": "",
+                "subCategory3": ""
             }
         }
     ]
@@ -194,15 +200,14 @@ curl --location 'https://edd.kursaha.com/api/event-flows/signal' \
 
 +++ Java
 
-// Coming soon
-
+//coming soon
 +++
 
-Here's a breakdown of the fields within the events:
+**Field Descriptions:**
 
-1. **customerId**: A distinctive user identifier for precise targeting.
-2. **signals**: Batch multiple signals in a single API call.
-3. **eventType**: Specify the [**event type**](../cohort/readme.md/#utilizing-cohort-events) corresponding to a specific user action.
-4. **data**: User data associated with the particular event, including attributes price, brand, productId, category, subCategory1, subCategory2, subCategory3 etc.
+1. `customerId`: Unique identifier for the customer.
+2. `signals`: List of events to send in one API call.
+3. `eventType`: Type of the event.
+4. `data`: Data associated with the event, including attributes like price, brand, product ID, category, etc.
 
 Leverage this seamless integration to transmit crucial user behavior data to Kursaha, enhancing your customer engagement and acquisition strategies. Connect with your audience like never before!
