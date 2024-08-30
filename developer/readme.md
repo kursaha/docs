@@ -89,7 +89,6 @@ const Kursaha = require("kursaha-sdk");
 
 // Initialize the SDK with your API key
 const kursahaClient = new Kursaha("<YOUR-API-KEY>");
-+++ Node.js
 
 const signal = {
   customerId: "unique-customer-id",
@@ -99,7 +98,6 @@ const signal = {
 };
 
 kursahaClient.signal(signal);
-
 ```
 
 +++ GoLang
