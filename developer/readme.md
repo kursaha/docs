@@ -92,7 +92,7 @@ const kursahaClient = new Kursaha("<YOUR-API-KEY>");
 
 const signal = {
   customerId: "unique-customer-id",
-  eventType: "eventType",
+  eventType: "event_type",
   data: {},
   eventflowIdentifier: "uuid",
 };
@@ -104,8 +104,8 @@ kursahaClient.signal(signal);
 
 ```go
 signal := edd.Signal{
-    EmitterID:           "unique-emitter-id",
-    StepNodeID:          "step-node-id",
+    EmitterID:           "unique-customer-id",
+    StepNodeID:          "event_type",
     Data:                map[string]interface{}{},
     EventFlowIdentifier: "uuid",
 }
@@ -127,8 +127,8 @@ curl --location 'https://edd.kursaha.com/api/event-flows/signal' \
     "requestIdentifier": "UUID",
     "signals": [
         {
-            "emitterId": "UUID",
-            "stepNodeId": "step_node_id",
+            "customerId": "unique-customer-id",
+            "eventType": "event_type",
             "data": {},
             "eventflowIdentifier": "event_flow_id"
         }
@@ -142,8 +142,8 @@ curl --location 'https://edd.kursaha.com/api/event-flows/signal' \
 
 1. `requestIdentifier`: Unique UUID to track the request.
 2. `signals`: List of signals to send in one API call.
-3. `emitterId`: Unique ID for the emitter.
-4. `stepNodeId`: Step node ID.
+3. `emitterId/customerId`: Unique ID for the emitter.
+4. `stepNodeId/eventType`: Step node ID.
 5. `data`: User data for the specific event.
 6. `eventflowIdentifier`: Identifier for the event flow.
 
