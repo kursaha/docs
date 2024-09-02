@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.778140633416">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.778571738575">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -34,12 +34,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../static/favicon.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.5.0.778140633416" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.5.0.778571738575" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.778140633416" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.778571738575" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.778140633416" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.778140633416" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.778571738575" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.778571738575" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -377,12 +377,32 @@ String stepNodeId = &quot;start_event&quot;;
 kursahaClient.edd.signal(eventflowIdentifier, stepNodeId, emitterId);</code></pre>
 </doc-codeblock></div>
 </doc-tab>
+<doc-tab v-cloak id="node-js">
+<template #title>Node.js</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">var Kursaha = require(&quot;kursaha-sdk&quot;); // in Javascript file
+// OR
+import Kursaha from &quot;kursaha-sdk&quot;; // in Typescript file
+
+// Initialize the SDK with your API key
+var kursahaClient = new Kursaha(&quot;&lt;YOUR-API-KEY&gt;&quot;);
+
+const signal = {
+  customerId: &quot;unique-customer-id&quot;,
+  eventType: &quot;event_type&quot;,
+  data: {},
+  eventflowIdentifier: &quot;uuid&quot;,
+};
+
+kursahaClient.signal(signal);</code></pre>
+</doc-codeblock></div>
+</doc-tab>
 <doc-tab v-cloak id="golang">
 <template #title>GoLang</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-go"><code v-pre class="language-go">signal := edd.Signal{
-    EmitterID:           &quot;unique-emitter-id&quot;,
-    StepNodeID:          &quot;step-node-id&quot;,
+    EmitterID:           &quot;unique-customer-id&quot;,
+    StepNodeID:          &quot;event_type&quot;,
     Data:                map[string]interface{}{},
     EventFlowIdentifier: &quot;uuid&quot;,
 }
@@ -404,8 +424,8 @@ if err != nil {
     &quot;requestIdentifier&quot;: &quot;UUID&quot;,
     &quot;signals&quot;: [
         {
-            &quot;emitterId&quot;: &quot;UUID&quot;,
-            &quot;stepNodeId&quot;: &quot;step_node_id&quot;,
+            &quot;customerId&quot;: &quot;unique-customer-id&quot;,
+            &quot;eventType&quot;: &quot;event_type&quot;,
             &quot;data&quot;: {},
             &quot;eventflowIdentifier&quot;: &quot;event_flow_id&quot;
         }
@@ -418,8 +438,8 @@ if err != nil {
 <ol>
 <li><code v-pre>requestIdentifier</code>: Unique UUID to track the request.</li>
 <li><code v-pre>signals</code>: List of signals to send in one API call.</li>
-<li><code v-pre>emitterId</code>: Unique ID for the emitter.</li>
-<li><code v-pre>stepNodeId</code>: Step node ID.</li>
+<li><code v-pre>emitterId/customerId</code>: Unique ID for the emitter.</li>
+<li><code v-pre>stepNodeId/eventType</code>: Step node ID.</li>
 <li><code v-pre>data</code>: User data for the specific event.</li>
 <li><code v-pre>eventflowIdentifier</code>: Identifier for the event flow.</li>
 </ol>
@@ -434,6 +454,28 @@ if err != nil {
 <pre class="language-bash"><code v-pre class="language-bash">POST https://edd.kursaha.com/api/customers</code></pre>
 </doc-codeblock></div>
 <doc-tabs>
+<doc-tab v-cloak id="nodejs">
+<template #title>Nodejs</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">const customerData = {
+  customerId: &quot;&lt;Unique-customer-id&gt;&quot;,
+  customerData: {
+    email: &quot;j.doe@swq.com&quot;,
+    phoneNumber: &quot;+911002220000&quot;,
+    firstName: &quot;John&quot;,
+    lastName: &quot;Doe&quot;,
+    gender: &quot;&quot;,
+    dob: &quot;&quot;,
+    city: &quot;&quot;,
+    state: &quot;&quot;,
+    country: &quot;&quot;,
+    zip: &quot;&quot;,
+  },
+};
+
+kursahaClient.sendCustomerData(customerData);</code></pre>
+</doc-codeblock></div>
+</doc-tab>
 <doc-tab v-cloak id="curl">
 <template #title>cURL</template>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -483,6 +525,33 @@ kursahaClient.edd.sendCustomerData(customerId, customerData);</code></pre>
 <pre class="language-bash"><code v-pre class="language-bash">POST https://edd.kursaha.com/api/event-flows/signal</code></pre>
 </doc-codeblock></div>
 <doc-tabs>
+<doc-tab v-cloak id="node-js">
+<template #title>Node.js</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">const event = {
+  customerId: &quot;&lt;Unique-customer-id&gt;&quot;,
+  eventType: &quot;&lt;event-type&gt;&quot;,
+  data: {
+    price: 200,
+    brand: &quot;something&quot;,
+    productId: &quot;&quot;,
+    category: &quot;&quot;,
+    subCategory1: &quot;&quot;,
+    subCategory2: &quot;&quot;,
+    subCategory3: &quot;&quot;,
+  },
+};
+
+kursahaClient
+  .sendEvent(event)
+  .then((response) =&gt; {
+    console.log(&quot;Event sent successfully:&quot;, response);
+  })
+  .catch((error) =&gt; {
+    console.error(&quot;Error sending event:&quot;, error);
+  });</code></pre>
+</doc-codeblock></div>
+</doc-tab>
 <doc-tab v-cloak id="curl">
 <template #title>cURL</template>
 <div class="codeblock-wrapper"><doc-codeblock>
