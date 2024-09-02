@@ -85,7 +85,9 @@ To interact with the REST API, include the following headers in your requests:
 +++ Node.js
 
 ```javascript
-const Kursaha = require("kursaha-sdk");
+const Kursaha = require("kursaha-sdk"); // in Javascript file
+// OR
+import Kursaha from "kursaha-sdk"; // in Typescript file
 
 // Initialize the SDK with your API key
 const kursahaClient = new Kursaha("<YOUR-API-KEY>");
