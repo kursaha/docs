@@ -85,14 +85,14 @@ To interact with the REST API, include the following headers in your requests:
 +++ Node.js
 
 ```javascript
-const Kursaha = require("kursaha-sdk"); // in Javascript file
+var Kursaha = require("kursaha-sdk"); // in Javascript file
 // OR
 import Kursaha from "kursaha-sdk"; // in Typescript file
 
 // Initialize the SDK with your API key
-const kursahaClient = new Kursaha("<YOUR-API-KEY>");
+var kursahaClient = new Kursaha("<YOUR-API-KEY>");
 
-const signal = {
+var signal = {
   customerId: "unique-customer-id",
   eventType: "event_type",
   data: {},
