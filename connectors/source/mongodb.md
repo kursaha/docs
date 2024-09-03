@@ -1,3 +1,10 @@
+---
+order: 94
+icon: dot
+label: MongoDB
+---
+
+
 # MongoDB 
 
 The MongoDB Connector seamlessly integrates your MongoDB database with our platform, enabling efficient data interaction, management, and replication. This guide provides a comprehensive, step-by-step process to set up and utilize the connector effectively.
@@ -194,4 +201,4 @@ We're committed to ensuring your MongoDB connection is configured correctly and 
 
 ---
 
-**Security Reminder**: Always handle your database credentials securely. Avoid sharing sensitive information and follow best practices for credential management to protect your data integrity and privacy.
+**Security Reminder**: Always handle  your database credentials securely. Avoid sharing sensitive information and follow best practices for credential management to protect your data integrity and privacy.
