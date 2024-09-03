@@ -42,7 +42,7 @@ Before you start, ensure you have:
     - Log in to your Kursaha account.
 
 2. **Navigate to Channels**:
-    - Go to `Home` > `Channels` > `Create New Channel`.
+    - Go to `Settings` > `Channel` > `Messaging` > `Create New`
 
 3. **Select Channel Type**:
     - From the available options, choose **MSG91**.
@@ -53,15 +53,11 @@ Before you start, ensure you have:
     - **Sender ID**: Input your registered Sender ID.
     - **Default Message Template**: Optionally, set a default template for your messages.
 
-5. **Configure Message Settings**:
-    - **Language**: Choose the language for your messages.
-    - **DND Policy**: Decide whether to apply DND (Do Not Disturb) settings.
-
-6. **Test the Configuration**:
+5. **Test the Configuration**:
     - Send a test message to ensure the channel is correctly configured.
     - Check the delivery status in your MSG91 account.
 
-7. **Save and Activate**:
+6. **Save and Activate**:
     - Once validated, save the channel configuration.
     - Activate the channel for it to start processing messages.
 
@@ -90,6 +86,7 @@ For any issues during the setup, contact our support team at [support@kursaha.co
 **Security Reminder**: Always handle your credentials with care and follow best practices to ensure your account's security.
 
 ---
+
 
 ## **4. Gupshup**
 
