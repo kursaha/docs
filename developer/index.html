@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.778749697444">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.778757016943">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -34,12 +34,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../static/favicon.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.5.0.778749697444" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.5.0.778757016943" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.778749697444" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.778757016943" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.778749697444" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.778749697444" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.778757016943" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.778757016943" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -454,6 +454,20 @@ if err != nil {
 <pre class="language-bash"><code v-pre class="language-bash">POST https://edd.kursaha.com/api/customers</code></pre>
 </doc-codeblock></div>
 <doc-tabs>
+<doc-tab v-cloak id="java">
+<template #title>Java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">// Unique Id of your Customer
+String customerId = &quot;&lt;Unique-customer-id&gt;&quot;;
+
+// Details of your Customer
+CustomerData customerData = new CustomerData();
+customerData.setEmail(&quot;john.deo@sqs.com&quot;);
+// ... Please provide all the details of that customer
+
+kursahaClient.edd.sendCustomerData(customerId, customerData);</code></pre>
+</doc-codeblock></div>
+</doc-tab>
 <doc-tab v-cloak id="nodejs">
 <template #title>Nodejs</template>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -474,6 +488,12 @@ if err != nil {
 };
 
 kursahaClient.sendCustomerData(customerData);</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="golang">
+<template #title>GoLang</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-go"><code v-pre class="language-go">Coming soon.</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 <doc-tab v-cloak id="curl">
@@ -499,20 +519,6 @@ kursahaClient.sendCustomerData(customerData);</code></pre>
 }'</code></pre>
 </doc-codeblock></div>
 </doc-tab>
-<doc-tab v-cloak id="java">
-<template #title>Java</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-java"><code v-pre class="language-java">// Unique Id of your Customer
-String customerId = &quot;&lt;Unique-customer-id&gt;&quot;;
-
-// Details of your Customer
-CustomerData customerData = new CustomerData();
-customerData.setEmail(&quot;john.deo@sqs.com&quot;);
-// ... Please provide all the details of that customer
-
-kursahaClient.edd.sendCustomerData(customerId, customerData);</code></pre>
-</doc-codeblock></div>
-</doc-tab>
 </doc-tabs>
 <doc-anchor-target id="sending-events">
     <h3>
@@ -525,11 +531,22 @@ kursahaClient.edd.sendCustomerData(customerId, customerData);</code></pre>
 <pre class="language-bash"><code v-pre class="language-bash">POST https://edd.kursaha.com/api/event-flows/signal</code></pre>
 </doc-codeblock></div>
 <doc-tabs>
+<doc-tab v-cloak id="java">
+<template #title>Java</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">    ...
+    String uniqueCustomerId = &quot;&lt;unique-customer-id&gt;&quot;;
+    String eventType = &quot;signup&quot;;
+    kursaha.edd.signal(eventType, uniqueCustomerId, data);
+    ...
+</code></pre>
+</doc-codeblock></div>
+</doc-tab>
 <doc-tab v-cloak id="node-js">
 <template #title>Node.js</template>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-javascript"><code v-pre class="language-javascript">const event = {
-  customerId: &quot;&lt;Unique-customer-id&gt;&quot;,
+  customerId: &quot;&lt;unique-customer-id&gt;&quot;,
   eventType: &quot;&lt;event-type&gt;&quot;,
   data: {
     price: 200,
@@ -550,6 +567,12 @@ kursahaClient
   .catch((error) =&gt; {
     console.error(&quot;Error sending event:&quot;, error);
   });</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="golang">
+<template #title>GoLang</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-go"><code v-pre class="language-go">Coming soon.</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 <doc-tab v-cloak id="curl">
@@ -576,10 +599,6 @@ kursahaClient
     ]
 }'</code></pre>
 </doc-codeblock></div>
-</doc-tab>
-<doc-tab v-cloak id="java">
-<template #title>Java</template>
-<p>//coming soon</p>
 </doc-tab>
 </doc-tabs>
 <p><strong>Field Descriptions:</strong></p>
