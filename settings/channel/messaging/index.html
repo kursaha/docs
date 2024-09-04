@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.778743515447">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.778749697444">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -24,21 +24,23 @@
     <meta property="og:url" content="https://docs.kursaha.com/settings/channel/messaging/">
     <meta property="og:title" content="Messaging channel - Customer engagement and business growth platform">
     <meta property="og:description" content="A Messaging Channel is crucial for modern businesses looking to enhance customer engagement, streamline communication, and improve efficiency.">
+    <meta property="og:image" content="https://docs.kursaha.com/static/images/whatsappevent1.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.kursaha.com/settings/channel/messaging/">
     <meta property="twitter:title" content="Messaging channel - Customer engagement and business growth platform">
     <meta property="twitter:description" content="A Messaging Channel is crucial for modern businesses looking to enhance customer engagement, streamline communication, and improve efficiency.">
+    <meta property="twitter:image" content="https://docs.kursaha.com/static/images/whatsappevent1.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../static/favicon.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.778743515447" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.778749697444" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.778743515447" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.778749697444" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.778743515447" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.778749697444" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -275,13 +277,86 @@
         <span><strong>1. Whatsapp</strong></span>
     </h2>
 </doc-anchor-target>
-<p>To create a Whatsapp channel, you&#x27;ll need to obtain your <a href="https://developers.facebook.com/docs/whatsapp/business-management-api/get-started">Deatils from Whatsapp Account</a>.</p>
+<p>To create a Whatsapp channel, you&#x27;ll need to obtain your <a href="https://developers.facebook.com/docs/whatsapp/business-management-api/get-started">Details from Whatsapp Account</a>.</p>
 <ol>
 <li>Go to <strong>Settings</strong> -&gt; <strong>Channel</strong> -&gt; <strong>Messaging</strong> -&gt; <strong>Create New</strong> -&gt; <strong>Whatsapp</strong>.</li>
 <li>Add Phone number Id and</li>
 <li>Paste the Access Token obtained from your Whatsapp account.</li>
 </ol>
 <p><a href="https://developers.facebook.com/docs/whatsapp/business-management-api/get-started">How to get ID and Access Token</a></p>
+<doc-anchor-target id="how-to-set-up-a-webhook-on-kursaha-to-track-whatsapp-message-events">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-set-up-a-webhook-on-kursaha-to-track-whatsapp-message-events">#</doc-anchor-trigger>
+        <span>How to Set Up a Webhook on Kursaha to Track WhatsApp Message Events</span>
+    </h3>
+</doc-anchor-target>
+<p>This guide will show you how to set up a webhook on Meta&#x27;s platform and connect it to Kursaha to monitor WhatsApp message events, such as message delivery and read statuses.</p>
+<doc-anchor-target id="step-1-set-up-the-webhook-on-metas-platform">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-set-up-the-webhook-on-metas-platform">#</doc-anchor-trigger>
+        <span>Step 1: Set Up the Webhook on Meta&#x27;s Platform</span>
+    </h4>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Log in to Meta for Developers</strong>:</p>
+<ul>
+<li>Visit <a href="https://developers.facebook.com/docs/whatsapp/cloud-api/guides/set-up-webhooks">Meta for Developers</a> and log in.</li>
+</ul>
+</li>
+<li><p><strong>Go to WhatsApp Configuration</strong>:</p>
+<ul>
+<li>In the left-hand menu, under <strong>Products</strong>, click <strong>WhatsApp</strong> and then <strong>Configuration</strong>.
+<img src="../../../static/images/whatsappevent1.png" alt="" /></li>
+</ul>
+</li>
+</ol>
+<hr>
+<ol start="3">
+<li><p><strong>Enter the Webhook URL</strong>:</p>
+<ul>
+<li>In the <strong>Webhook</strong> section, find the <strong>Callback URL</strong> field and enter:
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">https://www.edd.kursaha.com/api/whatsapp/webhooks</code></pre>
+</doc-codeblock></div>
+</li>
+</ul>
+</li>
+<li><p><strong>Retrieve Your Verify Token from Kursaha</strong>:</p>
+<ul>
+<li>Email <a href="mailto:support@kursaha.com">support@kursaha.com</a> to request your unique Verify Token, and we&#x27;ll send it to you promptly.</li>
+</ul>
+</li>
+<li><p><strong>Enter the Verify Token</strong>:</p>
+<ul>
+<li>Return to Meta’s platform and paste the token into the <strong>Verify Token</strong> field.</li>
+</ul>
+</li>
+<li><p><strong>Select Events to Track</strong>:
+<img src="../../../static/images/whatsappevent2.png" alt="" /></p>
+<ul>
+<li>Under <strong>Webhook fields</strong>, ensure the <strong>messages</strong> field is selected and <strong>Subscribed</strong>.</li>
+<li>Choose the appropriate API version (e.g., v17.0 for messages).</li>
+</ul>
+</li>
+<li><p><strong>Verify and Save</strong>:</p>
+<ul>
+<li>Click <strong>Verify and save</strong>. Meta will verify your webhook and start sending notifications to Kursaha.</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="step-2-monitor-events-on-kursaha">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-2-monitor-events-on-kursaha">#</doc-anchor-trigger>
+        <span>Step 2: Monitor Events on Kursaha</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li><strong>View Incoming Events</strong>:
+<ul>
+<li>Once the webhook is active, you can track WhatsApp message events like sent, delivered, and read statuses in the Kursaha dashboard.</li>
+</ul>
+</li>
+</ul>
 <doc-anchor-target id="2-whatsapp-interakt">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#2-whatsapp-interakt">#</doc-anchor-trigger>
@@ -359,7 +434,7 @@
 </doc-anchor-target>
 <ul>
 <li><strong>Send Campaigns</strong>: Start sending campaigns directly from the Kursaha.</li>
-<li><strong>User Journeys</strong>: Start user Journeies directly from the Kursaha.</li>
+<li><strong>User Journeys</strong>: Start user Journeys directly from the Kursaha.</li>
 <li><strong>Monitor Performance</strong>: Track message delivery and engagement statistics via the platform’s dashboard.</li>
 <li><strong>Manage Contacts</strong>: Use the platform to manage and segment your recipients efficiently.</li>
 </ul>
