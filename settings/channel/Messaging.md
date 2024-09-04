@@ -12,13 +12,55 @@ By integrating multiple messaging channels, you can choose the platform that bes
 
 ## **1. Whatsapp**
 
-To create a Whatsapp channel, you'll need to obtain your [Deatils from Whatsapp Account](https://developers.facebook.com/docs/whatsapp/business-management-api/get-started).
+To create a Whatsapp channel, you'll need to obtain your [Details from Whatsapp Account](https://developers.facebook.com/docs/whatsapp/business-management-api/get-started).
 
 1. Go to **Settings** -> **Channel** -> **Messaging** -> **Create New** -> **Whatsapp**.
 2. Add Phone number Id and
 3. Paste the Access Token obtained from your Whatsapp account.
 
 [How to get ID and Access Token](https://developers.facebook.com/docs/whatsapp/business-management-api/get-started)
+
+
+### How to Set Up a Webhook on Kursaha to Track WhatsApp Message Events
+
+This guide will show you how to set up a webhook on Meta's platform and connect it to Kursaha to monitor WhatsApp message events, such as message delivery and read statuses.
+
+#### Step 1: Set Up the Webhook on Meta's Platform
+
+1. **Log in to Meta for Developers**:
+   - Visit [Meta for Developers](https://developers.facebook.com/docs/whatsapp/cloud-api/guides/set-up-webhooks) and log in.
+
+2. **Go to WhatsApp Configuration**:
+   - In the left-hand menu, under **Products**, click **WhatsApp** and then **Configuration**.
+     ![](/static/images/whatsappEvent1.png)
+
+   ---   
+3. **Enter the Webhook URL**:
+   - In the **Webhook** section, find the **Callback URL** field and enter:
+     ```
+     https://www.edd.kursaha.com/api/whatsapp/webhooks
+     ```
+
+4. **Retrieve Your Verify Token from Kursaha**:
+   - Email support@kursaha.com to request your unique Verify Token, and we'll send it to you promptly.
+
+5. **Enter the Verify Token**:
+   - Return to Meta’s platform and paste the token into the **Verify Token** field.
+
+6. **Select Events to Track**:
+   ![](/static/images/whatsappEvent2.png)
+
+   - Under **Webhook fields**, ensure the **messages** field is selected and **Subscribed**.
+   - Choose the appropriate API version (e.g., v17.0 for messages).
+
+7. **Verify and Save**:
+   - Click **Verify and save**. Meta will verify your webhook and start sending notifications to Kursaha.
+
+#### Step 2: Monitor Events on Kursaha
+- **View Incoming Events**:
+   - Once the webhook is active, you can track WhatsApp message events like sent, delivered, and read statuses in the Kursaha dashboard.
+
+
 
 ## **2. Whatsapp Interakt**
 
@@ -44,7 +86,6 @@ Before you start, ensure you have:
 
 ---
 
-
 ## **4. Gupshup**
 
 To create a Gupshup channel, you'll need to obtain your [details from Gupshup Account](https://apidoc.gupshup.io/).
@@ -63,7 +104,7 @@ To create a Twilio SMS channel, you'll need to obtain your details from Twilio S
 
 # After channel setup
 - **Send Campaigns**: Start sending campaigns directly from the Kursaha.
-- **User Journeys**: Start user Journeies directly from the Kursaha.
+- **User Journeys**: Start user Journeys directly from the Kursaha.
 - **Monitor Performance**: Track message delivery and engagement statistics via the platform’s dashboard.
 - **Manage Contacts**: Use the platform to manage and segment your recipients efficiently.
 
