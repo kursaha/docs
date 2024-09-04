@@ -157,6 +157,10 @@ Send customer data using the following endpoint:
 POST https://edd.kursaha.com/api/customers
 ```
 
++++ Java
+
+:::code source="../static/code/signalStartEvent.java" range="33-41" :::
+
 +++ Nodejs
 
 ```javascript
@@ -177,6 +181,12 @@ const customerData = {
 };
 
 kursahaClient.sendCustomerData(customerData);
+```
+
++++ GoLang
+
+```go
+Coming soon.
 ```
 
 +++ cURL
@@ -201,10 +211,6 @@ curl --location 'https://edd.kursaha.com/api/customers' \
     }
 }'
 ```
-
-+++ Java
-
-:::code source="../static/code/signalStartEvent.java" range="33-41" :::
 +++
 
 ### Sending Events
@@ -215,11 +221,21 @@ Send events to Kursaha using the following endpoint:
 POST https://edd.kursaha.com/api/event-flows/signal
 ```
 
++++ Java
+```java
+    ...
+    String uniqueCustomerId = "<unique-customer-id>";
+    String eventType = "signup";
+    kursaha.edd.signal(eventType, uniqueCustomerId, data);
+    ...
+
+```
+
 +++ Node.js
 
 ```javascript
 const event = {
-  customerId: "<Unique-customer-id>",
+  customerId: "<unique-customer-id>",
   eventType: "<event-type>",
   data: {
     price: 200,
@@ -240,6 +256,11 @@ kursahaClient
   .catch((error) => {
     console.error("Error sending event:", error);
   });
+```
++++ GoLang
+
+```go
+Coming soon.
 ```
 
 +++ cURL
@@ -266,10 +287,6 @@ curl --location 'https://edd.kursaha.com/api/event-flows/signal' \
     ]
 }'
 ```
-
-+++ Java
-
-//coming soon
 +++
 
 **Field Descriptions:**
